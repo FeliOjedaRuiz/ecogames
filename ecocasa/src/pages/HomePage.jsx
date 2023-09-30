@@ -33,7 +33,7 @@ function HomePage() {
         />
         <NavLink to="/presentation" className="animate-pulse ">
           <Button sx={{ borderRadius: 2, marginTop: 2 }} variant="contained">
-            Comenzar
+            Iniciar
           </Button>
         </NavLink>
 
