@@ -28,28 +28,20 @@ export default {
             background: "rgb(22, 163, 74)",
           },
         },
-        slide: {
-          "0%": {
-            transform: "translateX(-100vw)",
-          },
-          "100%": {
-            transform: "translateX(100vw)",
-          },
-        },
         "alternate-logo": {
           "0%": { marginTop: "0" },
           "24%": { marginTop: "0" },
 
-          "25%": { marginTop: "-8rem" },
-          "49%": { marginTop: "-8rem" },
+          "25%": { marginTop: "-10rem" },
+          "49%": { marginTop: "-10rem" },
 
-          "50%": { marginTop: "-16rem" },
-          "74% ": { marginTop: "-16rem" },
+          "50%": { marginTop: "-20rem" },
+          "74% ": { marginTop: "-20rem" },
 
-          "75%": { marginTop: "-24rem" },
-          "100%": { marginTop: "-24rem" },
+          "75%": { marginTop: "-30rem" },
+          "100%": { marginTop: "-30rem" },
         },
-        flicker: {
+        "flicker": {
           "0%": { opacity: "0%" },
           "5%": { opacity: "100%" },
           "20%": { opacity: "100%" },
@@ -67,16 +59,59 @@ export default {
           "95%": { opacity: "100%" },
           "100%": { opacity: "0%" },
         },
+        "slide-left": {
+          "0%": {
+            transform: "translateX(-200vw)",
+          },
+          "70%": {
+            translate: "0px",
+          },
+          // "100%": {
+          //   translate: "0px",
+          // },
+        },
+        "roll": {
+          
+          "50%": {
+            transform: "rotate(15deg)",
+          },
+          "60%": {
+            transform: "rotate(-12deg)",
+          },
+          "70%": {
+            transform: "rotate(8deg)",
+          },
+          "80%": {
+            transform: "rotate(-6deg)",
+          },
+          "90%": {
+            transform: "rotate(-3deg)",
+          },          
+          "100%": {
+            transform: "rotate(0deg)",
+          },
+        },
+        "zoom-in-zoom-out": {
+          "0%": { transform: "scale(1, 1)",
+          },
+          "30%": {transform: "scale(1.08, 1.08)",
+          },
+          "60%": { transform: "scale(1, 1)",
+          },
+          "100%": { transform: "scale(1, 1)",
+          }
+        }
       },
       animation: {
         "slide-down": "slide-down 2s",
         "fade-in": "fade-in 4s",
         "background-change": "background-change-color 5s infinite alternate",
         "slide-fliker": "alternate-logo 15s infinite, flicker 15s infinite",
-
-        "alternate-logo": "alternate-logo 10s infinite alternate",
+        "logo-roll": "roll 4s ease-in-out, slide-left 2s ease-in",
       },
     },
   },
   plugins: [],
 };
+
+// , zoom-in-zoom-out 1s infinite ease-in-out 4s
