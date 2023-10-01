@@ -26,14 +26,16 @@ function PresentationPage() {
             Al final, podrás dar tus sugerencias y contribuir a la movilidad
             sostenible del futuro.{" "}
           </p>
-          <p className="leading-tight mt-2 text-center text-2xl">¿Te atreves?</p>
+          <p className="leading-tight mt-2 text-center text-2xl">
+            ¿Te atreves?
+          </p>
         </div>
         <NavLink
-          to="/presentation"
+          to="/pregunta-1"
           className="my-5 animate-pulse flex justify-center "
         >
           <Button sx={{ borderRadius: 2 }} variant="contained">
-          Continuar <span className="ml-2 h-full">{'>'}</span> 
+            Iniciar <span className="ml-2 h-full">{">"}</span>
           </Button>
         </NavLink>
       </div>
