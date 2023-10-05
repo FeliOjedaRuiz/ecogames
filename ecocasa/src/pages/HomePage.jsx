@@ -17,12 +17,11 @@ function HomePage() {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          alignContent: "space-between",
-          justifyContent: "space-between",
-          height: "100%"
+          justifyContent: "space-evenly",
+          height: "100vh",
         }}
       >
-        <h1 className="text-center animate-fade-in text-5xl drop-shadow-lg font-semibold text-white  p-5">
+        <h1 className="text-center animate-fade-in3 text-5xl drop-shadow-lg font-semibold text-white  p-5">
           Casa de la <span className="text-6xl font-bold">Movilidad</span>
         </h1>
 
