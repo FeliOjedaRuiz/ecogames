@@ -33,20 +33,20 @@ function NavControls() {
           </button>
         </div>
       </RestartModal>
-      <div className="fixed bg-gradient-to-b from-teal-400 to-teal-100 shadow-xl bottom-0 left-0 w-full h-20">
-        <div className="grid h-full max-w-lg grid-cols-2 mx-auto text-md font-medium p-2">
-          <button onClick={() => setRestartModalState(!restartModalState)} className="text-white bg-gradient-to-b from-red-500 to-red-700  rounded-lg m-2 drop-shadow-md">
+      <div className="fixed bg-gradient-to-b from-teal-400 to-teal-100 shadow-xl bottom-0 left-0 w-full h-16">
+        <div className="flex justify-evenly  max-w-lg  mx-auto text-md font-medium p-2">
+          <button onClick={() => setRestartModalState(!restartModalState)} className="text-white bg-gradient-to-b from-red-500 to-red-700 w-1/3  rounded-lg m-1  drop-shadow-md">
             <ReplayIcon
               sx={{
-                fontSize: 35,
+                fontSize: 30,
               }}
             /> Reiniciar
           </button>
-          <button onClick={() => navigate(-1)} className="text-white bg-gradient-to-b from-violet-500 to-violet-700 rounded-lg m-2 drop-shadow-md">
+          <button onClick={() => navigate(-1)} className="text-white bg-gradient-to-b from-violet-500 to-violet-700 w-1/3  rounded-lg m-1  drop-shadow-md">
             <ForwardIcon
               sx={{
                 transform: "rotate(180deg)",
-                fontSize: 45,
+                fontSize: 40,
               }}
             /> Atrás
           </button>

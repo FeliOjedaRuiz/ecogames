@@ -15,47 +15,43 @@ function QuizGamePage() {
 
   return (
     <Layout>
-      <div className="h-full screen flex flex-col justify-evenly">
-        <div className="bg-gradient-to-b from-white to-gray-200 w-screen relative animate-slide1 -left-10 px-6 py-3 drop-shadow-lg rounded-lg">
-          <p className="text-teal-600 drop-shadow-lg ml-7 leading-5 text-lg">
-            Mira como es el diseño de las calles en una ciudad pensada para una
-            movilidad sostenible.
-            <p className="mt-2 font-bold">
-              ¿Cuánto espacio se le da a los peatones?
-            </p>
+      <div className="bg-gradient-to-b from-white to-gray-200 w-screen relative animate-slide1 -left-10 px-6 py-3 drop-shadow-lg rounded-lg">
+        <p className="text-teal-700 drop-shadow-lg ml-7 leading-5 text-lg">
+          Mira como es el diseño de las calles en una ciudad pensada para una
+          movilidad sostenible.
+          <p className="mt-2 font-bold text-orange-600">
+            ¿Cuánto espacio se le da a los peatones?
           </p>
-        </div>
-
-        <div className="mb-2 mt-4 w-full p-2 justify-center flex animate-slide2">
-          <img
-            className="rounded-xl w-full border-4 border-teal-300 shadow-lg"
-            src={planteoCiudad}
-            alt="Esquema de ciudad con movilidad sostenible"
-          />
-        </div>
-
-        <div className="flex flex-col">
-          <div
-            onClick={() => setModalState(!modalState)}
-            className="bg-gradient-to-b from-lime-400 to-lime-500 m-2 p-2 animate-slide3 rounded-lg shadow-lg font-bold text-white leading-5"
-          >
-            <span className="drop-shadow-md">
-              A{")"} Poco, el principal objetivo es dar espacio a los coches
-              para llegar rápido a los sitios.{" "}
-            </span>
-          </div>
-          <div
-            onClick={() => setModalCorrectState(!modalCorrectState)}
-            className="bg-gradient-to-b from-cyan-600 to-cyan-800 m-2 p-2 animate-slide4 rounded-lg shadow-lg font-bold text-white leading-5"
-          >
-            <span className="drop-shadow-md">
-              B{")"} El espacio se reparte de una forma más equilibrada entre
-              peatón, coche privado y transporte público. Además se reserva
-              espacio para zonas verdes y otros tipos de movilidad alternativa.{" "}
-            </span>
-          </div>
-        </div>
+        </p>
       </div>
+
+      <div className="w-full justify-center flex animate-slide2">
+        <img
+          className="rounded-xl w-full border-4 border-teal-300 shadow-lg"
+          src={planteoCiudad}
+          alt="Esquema de ciudad con movilidad sostenible"
+        />
+      </div>
+
+      <div
+        onClick={() => setModalState(!modalState)}
+        className="bg-gradient-to-b from-lime-500 to-lime-700  p-2 animate-slide3 rounded-lg shadow-lg font-bold text-white leading-5"
+      >
+        <span className="drop-shadow-md">
+          A{")"} Poco, el principal objetivo es dar espacio a los coches para
+          llegar rápido a los sitios.{" "}
+        </span>
+      </div>
+      <div
+        onClick={() => setModalCorrectState(!modalCorrectState)}
+        className="bg-gradient-to-b from-cyan-600 to-cyan-800  p-2 animate-slide4 rounded-lg shadow-lg font-bold text-white leading-5"
+      >
+        <span className="drop-shadow-md">
+          B{")"} El espacio se reparte de una forma equilibrada entre peatones,
+          coches y transporte público.{" "}
+        </span>
+      </div>
+
       <>
         <Modal modalState={modalState} setModalState={setModalState}>
           <CloseIcon sx={{ fontSize: 150, color: "red" }} />

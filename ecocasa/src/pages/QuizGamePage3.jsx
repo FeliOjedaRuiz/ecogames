@@ -1,5 +1,4 @@
 import Layout from "../components/layouts/Layout";
-import piramideMovilidad from "../assets/images/piramide-movilidad.png";
 import ModalCorrect from "../components/modal/ModalCorrect";
 import { NavLink } from "react-router-dom";
 import CloseIcon from "@mui/icons-material/Close";
@@ -8,51 +7,55 @@ import EastIcon from "@mui/icons-material/East";
 import { useState } from "react";
 import Modal from "../components/modal/modal";
 import NavControls from "../components/layouts/NavControls";
+import goodCrossing from "../assets/images/buen-cruce-bici.jpeg";
+import badCrossing from "../assets/images/mal-cruce-bici.jpeg";
+
 function QuizGamePage3() {
   const [modalState, setModalState] = useState(false);
   const [modalCorrectState, setModalCorrectState] = useState(false);
 
   return (
     <Layout>
-      <div className="h-full screen flex flex-col justify-evenly">
-        <div className="bg-gradient-to-b from-white to-gray-200 w-screen relative animate-slide1 -left-10 px-6 py-3 drop-shadow-lg rounded-lg">
-          <p className="text-teal-600 drop-shadow-lg ml-7 leading-5 text-lg">
-            Mira esta imagen y analiza los tipos de transporte, sus ventajas y
-            desventajas.
-            <p className="mt-2 font-bold">
-              ¿Porque el transporte público es mejor opción que automóviles o
-              motocicletas?
-            </p>
+      <div className="bg-gradient-to-b from-white to-gray-200 animate-slide1 px-3 py-3 drop-shadow-lg rounded-lg">
+        <p className="text-orange-600 drop-shadow-lg leading-5 text-lg mb-2 text-center font-medium">
+          Mira este video para saber cómo moverte de forma segura por la calle
+          en bici.
+        </p>
+        <iframe
+          className="w-full aspect-video"
+          src="https://www.youtube.com/embed/B4kocUmXaNg?si=Zmf6K9sEo5gTn9ab"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div className="bg-gradient-to-b from-white to-gray-200 animate-slide1 px-6 py-3 drop-shadow-lg rounded-lg">
+        <p className="text-teal-700 drop-shadow-lg  leading-5 text-md">
+          Cuando vas caminando por una acera, ya sabes por dónde tienes que
+          cruzar... Sí, por el paso de peatones.
+          <p className="mt-2 font-bold text-rose-600">
+            Pero cuando montas en bici por la calle, ¿sabes cómo tienes que
+            cruzar?
           </p>
-        </div>
+        </p>
+      </div>
 
-        <div className="mb-2 mt-4 w-full p-2 justify-center flex animate-slide2">
-          <img
-            className="rounded-xl w-full border-4 border-teal-300 shadow-lg"
-            src={piramideMovilidad}
-            alt="Esquema de ciudad con movilidad sostenible"
-          />
+      <div className="flex justify-evenly ">
+        <div
+          onClick={() => setModalState(!modalState)}
+          className="mr-2 w-3/6 animate-slide4 rounded-xl shadow-lg font-bold text-white leading-5 aspect-square overflow-hidden "
+        >
+          <img src={badCrossing} alt="Mal cruce" className="rounded-xl" />
         </div>
-
-        <div className="flex flex-col">
-          <div
-            onClick={() => setModalCorrectState(!modalCorrectState)}
-            className="bg-gradient-to-b from-amber-500 to-amber-700  m-2 p-2 animate-slide3 rounded-lg shadow-lg font-bold text-white leading-5"
-          >
-            <span className="drop-shadow-md">
-              B{") "}Porque mover más gente a la vez es más eficiente.
-            </span>
-          </div>
-          <div
-            onClick={() => setModalState(!modalState)}
-            className="bg-gradient-to-b from-teal-500 to-teal-800 m-2 p-2 animate-slide4 rounded-lg shadow-lg font-bold text-white leading-5"
-          >
-            <span className="drop-shadow-md">
-              A{") "} Porque se mueven más rápido.
-            </span>
-          </div>
+        <div
+          onClick={() => setModalCorrectState(!modalCorrectState)}
+          className="ml-2 w-3/6 animate-slide3 rounded-xl shadow-lg font-bold text-white leading-5 aspect-square overflow-hidden"
+        >
+          <img src={goodCrossing} alt="Buen cruce" className="rounded-xl " />
         </div>
       </div>
+
       <>
         <Modal modalState={modalState} setModalState={setModalState}>
           <CloseIcon sx={{ fontSize: 150, color: "red" }} />
@@ -91,7 +94,7 @@ function QuizGamePage3() {
       </>
       <NavControls />
     </Layout>
-  )
+  );
 }
 
-export default QuizGamePage3
+export default QuizGamePage3;
