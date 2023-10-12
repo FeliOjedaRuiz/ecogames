@@ -1,8 +1,6 @@
 import Layout from "../components/layouts/Layout";
 import { NavLink } from "react-router-dom";
 import CloseIcon from "@mui/icons-material/Close";
-import CheckIcon from "@mui/icons-material/Check";
-import EastIcon from "@mui/icons-material/East";
 import { useState } from "react";
 import Modal from "../components/modal/modal";
 import NavControls from "../components/layouts/NavControls";
@@ -87,7 +85,7 @@ function QuizGamePage3() {
             <br />
             <p className="text-3xl text-yellow-700">Has superado el primer reto.</p>
           </div>
-          <NavLink to="/pregunta-3">
+          <NavLink to="/confetti">
             <button
               onClick={() => setFinalModalState(!finalModalState)}
               className="bg-gradient-to-t from-yellow-800 via-yellow-500 to-yellow-300 text-white drop-shadow-lg m-2 px-3 py-2 rounded justify-around font-medium text-lg "
