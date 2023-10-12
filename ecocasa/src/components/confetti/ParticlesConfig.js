@@ -18,8 +18,8 @@ const particlesConfig = {
         },
         "size": true,
         "speed": {
-          "min": 1,
-          "max": 3
+          "min": 3,
+          "max": 5
         }
       },
       "number": {
@@ -85,7 +85,7 @@ const particlesConfig = {
       "size": {
         "value": {
           "min": 2,
-          "max": 4
+          "max": 7
         }
       },
       "roll": {

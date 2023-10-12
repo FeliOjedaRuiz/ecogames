@@ -31,7 +31,7 @@ function PresentationPage() {
           </p>
         </div>
         <NavLink
-          to="/pregunta-1"
+          to="/quiz-1"
           className="my-5 animate-pulse flex justify-center "
         >
           <Button sx={{ borderRadius: 2 }} variant="contained">
