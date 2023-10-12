@@ -5,6 +5,7 @@ import QuizGamePage from "./pages/QuizGamePage";
 import QuizGamePage2 from "./pages/QuizGamePage2";
 import QuizGamePage3 from "./pages/QuizGamePage3";
 import GameSelectionPage from "./pages/GameSelectionPage";
+import Mision1Presentation from "./pages/Mision1Presentation";
 
 
 function App() {
@@ -13,10 +14,12 @@ function App() {
       <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/presentation" element={<PresentationPage />} />
+      <Route path="/game-selection" element={<GameSelectionPage />} />
+      <Route path="/mision1" element={<Mision1Presentation />} />
       <Route path="/quiz-1" element={<QuizGamePage />} />
       <Route path="/quiz-2" element={<QuizGamePage2 />} />
       <Route path="/quiz-3" element={<QuizGamePage3 />} />
-      <Route path="/game-selection" element={<GameSelectionPage />} />
+      
       </Routes>
     </>
       

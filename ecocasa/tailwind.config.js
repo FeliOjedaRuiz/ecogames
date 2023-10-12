@@ -59,11 +59,23 @@ export default {
           "95%": { opacity: "100%" },
           "100%": { opacity: "0%" },
         },
+        "hidden": {
+          "0%": { opacity: "0%" },
+          "100%": { opacity: "0%" },
+        },
         "slide-left": {
           "0%": {
             transform: "translateX(-200vw)",
           },
-          "70%": {
+          "100%": {
+            translate: "0px",
+          },
+        },
+        "slide-right": {
+          "0%": {
+            transform: "translateX(200vw)",
+          },
+          "100%": {
             translate: "0px",
           },
         },
@@ -72,18 +84,13 @@ export default {
             transform: "translateX(-200vw)",
           },
           "70%": {
-            translate: "80px",
+            translate: "40px",
           },
           "100%": {
             translate: "0px",
           },
         },
-        "hidden": {
-          "0%": { opacity: "0%" },
-          "100%": { opacity: "0%" },
-        },
-        "roll": {
-          
+        "roll": {          
           "50%": {
             transform: "rotate(15deg)",
           },
@@ -110,22 +117,68 @@ export default {
           },
           "100%": { transform: "scale(1, 1)",
           }
+        },
+        "wiki": {
+          "0%": {
+            transform: "rotate(0deg)",
+          },
+          "30%": {
+            transform: "rotate(0deg)",
+          },
+          "40%": {
+            transform: "rotate(-3deg)",
+          },
+          "60%": {
+            transform: "rotate(3deg)",
+          },
+          "80%": {
+            transform: "rotate(0deg)",
+          },
+          "100%": {
+            transform: "rotate(0deg)",
+          },
+        },
+        "wikislow": {
+          "0%": {
+            transform: "rotate(0deg)",
+          },
+          "30%": {
+            transform: "rotate(0deg)",
+          },
+          "40%": {
+            transform: "rotate(-1deg)",
+          },
+          "60%": {
+            transform: "rotate(1deg)",
+          },
+          "80%": {
+            transform: "rotate(0deg)",
+          },
+          "100%": {
+            transform: "rotate(0deg)",
+          },
         }
       },
       animation: {
-        "slide-down": "slide-down 2s",
-        "fade-in3": "fade-in 3s",
+        "slide-down": "slide-down 2s",        
         "fade-in0.3": "fade-in 0.3s",
         "fade-in0.5": "fade-in 0.5s",
+        "fade-in1": "fade-in 1s",
+        "fade-in3": "fade-in 3s",
         "background-change": "background-change-color 5s infinite alternate",
-        "slide-fliker": "alternate-logo 15s infinite, flicker 15s infinite",
+        "slide-fliker": "alternate-logo 12s infinite, flicker 12s infinite",
         "logo-roll": "roll 4s ease-in-out, slide-left 2s ease-in",
         "zoom": "zoom-in-zoom-out 2s ease-in-out",
-        "slide1": "slide-left2 0.5s",
-        "slide2": "slide-left2 0.5s 0.25s, hidden 0.25s",
-        "slide3": "slide-left2 0.5s 0.5s, hidden 0.5s",
-        "slide4": "slide-left2 0.5s 0.75s, hidden 0.75s",
-        "slide5": "slide-left2 0.5s 1s, hidden 1s",
+        "slide1": "slide-left 0.5s",
+        "slide2": "slide-left 0.5s 0.10s, hidden 0.10s",
+        "slide3": "slide-left 0.5s 0.20s, hidden 0.20s",
+        "slide4": "slide-left 0.5s 0.30s, hidden 0.30s",
+        "slide5": "slide-left 0.5s 0.4s, hidden 0.4s",
+        "slide-r-1": "slide-right 0.5s",
+        "slide-r-2": "slide-right 0.5s 0.10s, hidden 0.10s",
+        "slide-r-3": "slide-right 0.5s 0.20s, hidden 0.20s",
+        "wiki": "wiki 2s infinite  alternate",
+        "wikislow": "wikislow 3s infinite  alternate"
       },
     },
   },

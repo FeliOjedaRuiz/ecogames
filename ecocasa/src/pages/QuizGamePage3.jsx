@@ -9,6 +9,7 @@ import badCrossing from "../assets/images/mal-cruce-bici.jpeg";
 import FinalModal from "../components/modal/FinalModal";
 import WinIcon from "@mui/icons-material/EmojiEvents";
 
+
 function QuizGamePage3() {
   const [modalState, setModalState] = useState(false);
   const [finalModalState, setFinalModalState] = useState(false);
@@ -83,7 +84,7 @@ function QuizGamePage3() {
           <div className="text-center font-bold text-black mb-6 ">
             <p className="text-5xl ">¡Felicidades!</p>
             <br />
-            <p className="text-3xl text-yellow-700">Has superado el primer reto.</p>
+            <p className="text-3xl text-yellow-700">Has superado la primera misión.</p>
           </div>
           <NavLink to="/game-selection">
             <button
