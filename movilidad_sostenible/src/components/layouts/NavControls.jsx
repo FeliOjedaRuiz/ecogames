@@ -33,24 +33,34 @@ function NavControls() {
           </button>
         </div>
       </RestartModal>
-      <div className="fixed bg-gradient-to-b from-teal-400 to-teal-100 shadow-xl bottom-0 left-0 w-full h-16">
-        <div className="flex justify-evenly  max-w-lg  mx-auto text-md font-medium p-2">
-          <button onClick={() => setRestartModalState(!restartModalState)} className="text-white bg-gradient-to-b from-red-500 to-red-700 w-1/3  rounded-lg m-1  drop-shadow-md">
+      <div className="flex justify-evenly items-center fixed bg-gradient-to-b from-teal-400 to-teal-100 shadow-xl bottom-0 left-0 w-full h-16">
+        {/* <div className="flex justify-evenly max-w-lg  mx-auto text-md md:text-xl font-medium "> */}
+          <button
+            onClick={() => setRestartModalState(!restartModalState)}
+            className="text-white bg-gradient-to-b from-red-500 to-red-700 w-1/3 rounded-lg m-1 drop-shadow-md py-1"
+          >
             <ReplayIcon
               sx={{
-                fontSize: 30,
+                fontSize: { xs: 30,
+                md: 75, },
               }}
-            /> Reiniciar
+            />{" "}
+            Reiniciar
           </button>
-          <button onClick={() => navigate(-1)} className="text-white bg-gradient-to-b from-violet-500 to-violet-700 w-1/3  rounded-lg m-1  drop-shadow-md">
+          <button
+            onClick={() => navigate(-1)}
+            className="text-white bg-gradient-to-b from-violet-500 to-violet-700 w-1/3 rounded-lg m-1 drop-shadow-md py-1"
+          >
             <ForwardIcon
               sx={{
                 transform: "rotate(180deg)",
-                fontSize: 40,
+                fontSize: { xs: 30,
+                md: 75, },
               }}
-            /> Atrás
+            />{" "}
+            Atrás
           </button>
-        </div>
+        {/* </div> */}
       </div>
     </>
   );

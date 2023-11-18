@@ -113,7 +113,7 @@ export default {
         "zoom-in-zoom-out": {
           "0%": { transform: "scale(1, 1)",
           },
-          "50%": {transform: "scale(1.08, 1.08)",
+          "50%": {transform: "scale(1.2, 1.2)",
           },
           "100%": { transform: "scale(1, 1)",
           }
@@ -130,6 +130,26 @@ export default {
           },
           "60%": {
             transform: "rotate(3deg)",
+          },
+          "80%": {
+            transform: "rotate(0deg)",
+          },
+          "100%": {
+            transform: "rotate(0deg)",
+          },
+        },
+        "wiki-r": {
+          "0%": {
+            transform: "rotate(0deg)",
+          },
+          "30%": {
+            transform: "rotate(0deg)",
+          },
+          "40%": {
+            transform: "rotate(3deg)",
+          },
+          "60%": {
+            transform: "rotate(-3deg)",
           },
           "80%": {
             transform: "rotate(0deg)",
@@ -177,8 +197,10 @@ export default {
         "slide-r-1": "slide-right 0.5s",
         "slide-r-2": "slide-right 0.5s 0.10s, hidden 0.10s",
         "slide-r-3": "slide-right 0.5s 0.20s, hidden 0.20s",
-        "wiki": "wiki 2s infinite  alternate",
-        "wikislow": "wikislow 3s infinite  alternate"
+        "wiki": "wiki 3s infinite  alternate",
+        "wiki-r": "wiki-r 3s infinite  alternate",
+        "wikislow": "wikislow 3s infinite  alternate",
+        "zoom-trophy": "zoom-in-zoom-out 1s ease-in-out 1s infinite",
       },
     },
   },

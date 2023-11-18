@@ -9,7 +9,7 @@ function GameSelectionPage() {
   return (
     <Layout>
       <div className="bg-gradient-to-b from-white to-slate-200 w-screen relative -left-5 p-4 drop-shadow-lg animate-fade-in1">
-        <h2 className="text-center font-bold text-4xl  uppercase bg-gradient-to-tl from-lime-600 via-teal-500 to-sky-700 text-transparent bg-clip-text leading-8 drop-shadow-md">
+        <h2 className="text-center font-bold text-4xl md:text-5xl  uppercase bg-gradient-to-tl from-lime-600 via-teal-500 to-sky-700 text-transparent bg-clip-text leading-8 drop-shadow-md">
           ¡Completa las misiones!
         </h2>
       </div>
@@ -18,7 +18,7 @@ function GameSelectionPage() {
           1
         </span>
         <div className="flex flex-col w-7/12 justify-evenly items-center mr-2">
-          <p className="text-xl font-bold leading-6 ">
+          <p className="text-xl md:text-2xl font-bold leading-6 ">
             Tipos de trasnporte y seguridad vial
           </p>
         </div>
@@ -27,7 +27,7 @@ function GameSelectionPage() {
           className="w-4/12 flex flex-col items-center overflow-visible "
         >
           <img src={bus} alt="" className="w-full z-10 animate-wiki" />
-          <button className="bg-cyan-600 py-1 px-3 -mt-2 rounded text-white text-md font-medium">
+          <button className="bg-cyan-600 py-1 px-3 -mt-2 rounded text-white text-md md:text-xl font-medium">
             Comenzar
           </button>
         </div>
@@ -37,7 +37,7 @@ function GameSelectionPage() {
           2
         </span>
         <div className="flex flex-col w-7/12 justify-evenly items-center mr-2">
-          <p className="text-lg font-bold leading-6 ">
+          <p className="text-lg md:text-2xl font-bold leading-6 ">
             Cambio climático, calidad del aire y salud
           </p>
         </div>
@@ -45,8 +45,8 @@ function GameSelectionPage() {
           
           className="w-4/12 flex flex-col items-center overflow-visible "
         >
-          <img src={train} alt="" className="w-full z-10 animate-wiki" />
-          <button className="bg-emerald-600 py-1 px-3 -mt-2 rounded text-white text-md font-medium">
+          <img src={train} alt="" className="w-full z-10 animate-wiki-r" />
+          <button className="bg-emerald-600 py-1 px-3 -mt-2 rounded text-white text-md md:text-xl font-medium">
             Comenzar
           </button>
         </div>
@@ -56,7 +56,7 @@ function GameSelectionPage() {
           3
         </span>
         <div className="flex flex-col w-7/12 justify-evenly items-center mr-2">
-          <p className="text-xl font-bold leading-6 ">
+          <p className="text-xl md:text-2xl font-bold leading-6 ">
             ¿Qué puedes <br /> hacer tú?
           </p>
         </div>
@@ -69,7 +69,7 @@ function GameSelectionPage() {
             alt=""
             className="h-24 z-10 animate-wiki relative -top-6"
           />
-          <button className="bg-lime-600 py-1 px-3 -mt-9 rounded text-white text-md font-medium">
+          <button className="bg-lime-600 py-1 px-3 -mt-9 rounded text-white text-md md:text-xl font-medium">
             Comenzar
           </button>
         </div>

@@ -29,7 +29,7 @@ function QuizGamePage3() {
         ></iframe>
       </div>
 
-      <div className="bg-gradient-to-b from-white to-gray-200 animate-slide1 px-6 py-3 drop-shadow-lg rounded-lg">
+      <div className="bg-gradient-to-b from-white to-gray-200 animate-slide-r-2 px-6 py-3 drop-shadow-lg rounded-lg">
         <p className="text-teal-700 drop-shadow-lg  leading-5 text-md">
           Cuando vas caminando por una acera, ya sabes por dónde tienes que
           cruzar... <br /> Sí, por el paso de peatones.
@@ -43,14 +43,14 @@ function QuizGamePage3() {
       <div className="flex justify-evenly mb-1 ">
         <div
           onClick={() => setModalState(!modalState)}
-          className="mr-2 w-2/5 animate-slide4 rounded-xl border-emerald-500 bg-emerald-500 text-center drop-shadow-lg font-bold text-white leading-5  overflow-hidden "
+          className="mr-2 w-2/5 animate-slide3 rounded-xl border-emerald-500 bg-emerald-500 text-center drop-shadow-lg font-bold text-white leading-5  overflow-hidden "
         >
           <p className="pt-2 pb-1 drop-shadow text-lg">Opción {`"A"`} </p>
           <img src={badCrossing} alt="Mal cruce" className="" />
         </div>
         <div
           onClick={() => setFinalModalState(!finalModalState)}
-          className="ml-2 w-2/5 animate-slide3 rounded-xl border-cyan-500 bg-cyan-500 text-center drop-shadow-lg font-bold text-white leading-5  overflow-hidden"
+          className="ml-2 w-2/5 animate-slide-r-3 rounded-xl border-cyan-500 bg-cyan-500 text-center drop-shadow-lg font-bold text-white leading-5  overflow-hidden"
         >
           <p className="pt-2 pb-1 drop-shadow text-lg">Opción {`"B"`} </p>
           <img src={goodCrossing} alt="Buen cruce" className="" />
@@ -75,12 +75,14 @@ function QuizGamePage3() {
           finalModalState={finalModalState}
           setFinalModalState={setFinalModalState}
         >
+        <div className="animate-zoom-trophy">
           <WinIcon
             sx={{
               fontSize: 150,
               color: "#ca8a04" ,
             }}
           />
+          </div>
           <div className="text-center font-bold text-black mb-6 ">
             <p className="text-5xl ">¡Felicidades!</p>
             <br />
