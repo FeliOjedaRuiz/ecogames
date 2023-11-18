@@ -6,7 +6,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import CheckIcon from "@mui/icons-material/Check";
 import EastIcon from "@mui/icons-material/East";
 import { useState } from "react";
-import Modal from "../components/modal/modal";
+import Modal from "../components/modal/Modal";
 import NavControls from "../components/layouts/NavControls";
 
 function QuizGamePage2() {
