@@ -83,28 +83,3 @@ function HomePage() {
 }
 
 export default HomePage;
-
-// <div className=" w-screen bg-white shadow-lg p-4 overflow-hidden">
-//           <div className="flex justify-around animate-slide items-center">
-//             <img
-//               className="h-12 mx-8"
-//               src={porElClimaLogo}
-//               alt="logo Maracena por el clima"
-//             />
-//             <img
-//               className="h-12 mx-8"
-//               src={ayuMaracenaLogo}
-//               alt="logo Ayuntamiento de Maracena"
-//             />
-//             <img
-//               className="h-14 mx-8"
-//               src={locationLogo}
-//               alt="logo movilidad"
-//             />
-//             <img
-//               className="h-12 mx-8"
-//               src={federLogo}
-//               alt="logo fondo europeo de desarrollo regional (FEDER)"
-//             />
-//           </div>
-//         </div>
