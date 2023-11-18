@@ -2,7 +2,7 @@ import Layout from "../components/layouts/Layout";
 import { NavLink } from "react-router-dom";
 import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
-import Modal from "../components/modal/modal";
+import Modal from "../components/modal/Modal";
 import NavControls from "../components/layouts/NavControls";
 import goodCrossing from "../assets/images/buen-cruce-bici.jpeg";
 import badCrossing from "../assets/images/mal-cruce-bici.jpeg";

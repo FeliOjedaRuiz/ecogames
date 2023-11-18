@@ -1,6 +1,6 @@
 import Layout from "../components/layouts/Layout";
 import planteoCiudad from "../assets/images/planteociudad.jpeg";
-import Modal from "../components/modal/modal";
+import Modal from "../components/modal/Modal";
 import ModalCorrect from "../components/modal/ModalCorrect";
 import { useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
