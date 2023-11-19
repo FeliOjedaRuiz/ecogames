@@ -9,6 +9,7 @@ import Mision1Presentation from "./pages/Mision1Presentation";
 
 
 function App() {
+
   return (
     <>
       <Routes>
@@ -18,8 +19,7 @@ function App() {
       <Route path="/mision1" element={<Mision1Presentation />} />
       <Route path="/quiz-1" element={<QuizGamePage />} />
       <Route path="/quiz-2" element={<QuizGamePage2 />} />
-      <Route path="/quiz-3" element={<QuizGamePage3 />} />
-      
+      <Route path="/quiz-3" element={<QuizGamePage3 />} />      
       </Routes>
     </>
       
