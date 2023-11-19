@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Routes>
-      <Route path="/" element={<HomePage />} />
+      <Route path="/ecogames" element={<HomePage />} />
       <Route path="/presentation" element={<PresentationPage />} />
       <Route path="/game-selection" element={<GameSelectionPage />} />
       <Route path="/mision1" element={<Mision1Presentation />} />
