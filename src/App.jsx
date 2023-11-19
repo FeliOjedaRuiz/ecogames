@@ -14,12 +14,12 @@ function App() {
     <>
       <Routes>
       <Route path="/ecogames" element={<HomePage />} />
-      <Route path="/presentation" element={<PresentationPage />} />
-      <Route path="/game-selection" element={<GameSelectionPage />} />
-      <Route path="/mision1" element={<Mision1Presentation />} />
-      <Route path="/quiz-1" element={<QuizGamePage />} />
-      <Route path="/quiz-2" element={<QuizGamePage2 />} />
-      <Route path="/quiz-3" element={<QuizGamePage3 />} />      
+      <Route path="/ecogames/presentation" element={<PresentationPage />} />
+      <Route path="/ecogames/game-selection" element={<GameSelectionPage />} />
+      <Route path="/ecogames/mision1" element={<Mision1Presentation />} />
+      <Route path="/ecogames/quiz-1" element={<QuizGamePage />} />
+      <Route path="/ecogames/quiz-2" element={<QuizGamePage2 />} />
+      <Route path="/ecogames/quiz-3" element={<QuizGamePage3 />} />      
       </Routes>
     </>
       

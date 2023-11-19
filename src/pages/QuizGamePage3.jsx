@@ -88,7 +88,7 @@ function QuizGamePage3() {
             <br />
             <p className="text-3xl text-yellow-700">Has superado la primera misión.</p>
           </div>
-          <NavLink to="/game-selection">
+          <NavLink to="/ecogames/game-selection">
             <button
               onClick={() => setFinalModalState(!finalModalState)}
               className="bg-gradient-to-t from-yellow-800 via-yellow-500 to-yellow-300 text-white drop-shadow-lg m-2 px-3 py-2 rounded justify-around font-medium text-lg "

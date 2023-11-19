@@ -77,7 +77,7 @@ function QuizGamePage() {
             <p className="text-2xl">Enhorabuena, vas por buen camino...</p>
           </div>
 
-          <NavLink to="/quiz-2">
+          <NavLink to="/ecogames/quiz-2">
             <button
               className="bg-emerald-600 text-white m-2 px-3 py-2 rounded justify-around font-medium text-lg "
             >

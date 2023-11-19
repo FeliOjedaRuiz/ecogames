@@ -36,7 +36,7 @@ function PresentationPage() {
           </p>
         </div>
         <NavLink
-          to="/game-selection"
+          to="/ecogames/game-selection"
           className=" animate-pulse text-center bg-amber-700 text-white text-xl md:text-2xl font-medium px-4 py-2 rounded-lg"
         >
           ¡A por ello!

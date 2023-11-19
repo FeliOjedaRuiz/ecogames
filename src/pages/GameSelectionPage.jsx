@@ -13,7 +13,7 @@ function GameSelectionPage() {
           ¡Completa las misiones!
         </h2>
       </div>
-      <NavLink to="/mision1" className="flex justify-evenly items-center bg-white/80 text-center h-28 rounded-lg p-3 drop-shadow-lg animate-slide-r-1">
+      <NavLink to="/ecogames/mision1" className="flex justify-evenly items-center bg-white/80 text-center h-28 rounded-lg p-3 drop-shadow-lg animate-slide-r-1">
         <span className="text-5xl w-1/12 m-2 font-extrabold text-cyan-600">
           1
         </span>
@@ -32,7 +32,7 @@ function GameSelectionPage() {
           </button>
         </div>
       </NavLink>
-      <NavLink to="/quiz-1" className="flex justify-evenly items-center bg-white/80 text-center h-28 rounded-lg p-3 drop-shadow-lg animate-slide2">
+      <NavLink to="/ecogames/quiz-1" className="flex justify-evenly items-center bg-white/80 text-center h-28 rounded-lg p-3 drop-shadow-lg animate-slide2">
         <span className="text-5xl w-1/12 m-2 font-extrabold text-emerald-600">
           2
         </span>
@@ -51,7 +51,7 @@ function GameSelectionPage() {
           </button>
         </div>
       </NavLink>
-      <NavLink to="/quiz-1" className="flex justify-evenly items-center bg-white/80 text-center h-28 rounded-lg p-3 drop-shadow-lg animate-slide-r-3">
+      <NavLink to="/ecogames/quiz-1" className="flex justify-evenly items-center bg-white/80 text-center h-28 rounded-lg p-3 drop-shadow-lg animate-slide-r-3">
         <span className="text-5xl w-1/12 m-2 font-extrabold text-lime-600">
           3
         </span>

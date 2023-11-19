@@ -25,7 +25,7 @@ export default function Mision1Presentation() {
             ellas con seguridad.
           </p>
         </div>
-        <NavLink to="/quiz-1" className="bg-rose-700 text-white px-3 py-2 rounded justify-around font-medium text-lg ">Comenzar</NavLink>
+        <NavLink to="/ecogames/quiz-1" className="bg-rose-700 text-white px-3 py-2 rounded justify-around font-medium text-lg ">Comenzar</NavLink>
       </div>
       <NavControls />
     </Layout>

@@ -42,7 +42,7 @@ function HomePage() {
             alt="Logo Eco Juegos"
           />
           <NavLink
-            to="/presentation"
+            to="/ecogames/presentation"
             className="animate-pulse bg-amber-700 text-white text-xl font-medium px-4 py-2 rounded-lg "
           >
             Iniciar

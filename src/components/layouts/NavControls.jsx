@@ -26,7 +26,7 @@ function NavControls() {
             Cancelar
           </button>
           <button
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/ecogames/")}
             className="bg-red-600 text-white m-2 px-3 py-2 rounded flex justify-center  font-medium text-lg"
           >
             Reiniciar
