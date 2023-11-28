@@ -8,7 +8,7 @@ import CheckIcon from "@mui/icons-material/Check";
 import EastIcon from "@mui/icons-material/East";
 import { NavLink } from "react-router-dom";
 import NavControls from "../components/layouts/NavControls";
-import correct from "../assets/mp3/Correct.mp3"
+import correct from "../assets/mp3/correct.mp3"
 
 function QuizGamePage() {
   const [modalState, setModalState] = useState(false);
