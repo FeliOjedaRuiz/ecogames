@@ -8,10 +8,18 @@ import CheckIcon from "@mui/icons-material/Check";
 import EastIcon from "@mui/icons-material/East";
 import { NavLink } from "react-router-dom";
 import NavControls from "../components/layouts/NavControls";
+import correct from "../assets/mp3/Correct.mp3"
 
 function QuizGamePage() {
   const [modalState, setModalState] = useState(false);
   const [modalCorrectState, setModalCorrectState] = useState(false);
+
+  const correctSound = new Audio(correct)
+
+  const correctClick = () => {
+    setModalCorrectState(!modalCorrectState);
+    correctSound.play()
+  };
 
   return (
     <Layout>
@@ -43,7 +51,7 @@ function QuizGamePage() {
         </span>
       </div>
       <div
-        onClick={() => setModalCorrectState(!modalCorrectState)}
+        onClick={() => correctClick() }
         className="bg-gradient-to-b from-cyan-600 to-cyan-800  p-2 animate-slide4 rounded-lg shadow-lg font-bold text-white leading-5"
       >
         <span className="drop-shadow-md">
