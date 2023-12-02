@@ -1,5 +1,3 @@
-
-
 function RestartModal({ children, restartModalState }) {
   return (
     <>
@@ -11,7 +9,7 @@ function RestartModal({ children, restartModalState }) {
         </div>
       )}
     </>
-  )
+  );
 }
 
-export default RestartModal
+export default RestartModal;

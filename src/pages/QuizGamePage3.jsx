@@ -2,17 +2,31 @@ import Layout from "../components/layouts/Layout";
 import { NavLink } from "react-router-dom";
 import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
-import Modal from "../components/modal/Modal";
+import WrongModal from "../components/modal/WrongModal";
 import NavControls from "../components/layouts/NavControls";
 import goodCrossing from "../assets/images/buen-cruce-bici.jpeg";
 import badCrossing from "../assets/images/mal-cruce-bici.jpeg";
 import FinalModal from "../components/modal/FinalModal";
 import WinIcon from "@mui/icons-material/EmojiEvents";
-
+import final from "../assets/mp3/final.mp3";
+import wrong from "../assets/mp3/error.mp3";
 
 function QuizGamePage3() {
-  const [modalState, setModalState] = useState(false);
+  const [wrongModalState, setWrongModalState] = useState(false);
   const [finalModalState, setFinalModalState] = useState(false);
+
+  const finalSound = new Audio(final);
+  const wrongSound = new Audio(wrong);
+
+  const finalClick = () => {
+    setFinalModalState(!finalModalState);
+    finalSound.play();
+  };
+
+  const wrongClick = () => {
+    setWrongModalState(!wrongModalState);
+    wrongSound.play();
+  };
 
   return (
     <Layout>
@@ -42,14 +56,14 @@ function QuizGamePage3() {
 
       <div className="flex justify-evenly mb-1 ">
         <div
-          onClick={() => setModalState(!modalState)}
+          onClick={() => wrongClick()}
           className="mr-2 w-2/5 animate-slide3 rounded-xl border-emerald-500 bg-emerald-500 text-center drop-shadow-lg font-bold text-white leading-5  overflow-hidden "
         >
           <p className="pt-2 pb-1 drop-shadow text-lg">Opción {`"A"`} </p>
           <img src={badCrossing} alt="Mal cruce" className="" />
         </div>
         <div
-          onClick={() => setFinalModalState(!finalModalState)}
+          onClick={() => finalClick()}
           className="ml-2 w-2/5 animate-slide-r-3 rounded-xl border-cyan-500 bg-cyan-500 text-center drop-shadow-lg font-bold text-white leading-5  overflow-hidden"
         >
           <p className="pt-2 pb-1 drop-shadow text-lg">Opción {`"B"`} </p>
@@ -58,35 +72,40 @@ function QuizGamePage3() {
       </div>
 
       <>
-        <Modal modalState={modalState} setModalState={setModalState}>
+        <WrongModal
+          wrongModalState={wrongModalState}
+          setWrongModalState={setWrongModalState}
+        >
           <CloseIcon sx={{ fontSize: 150, color: "red" }} />
           <div className="text-center font-bold text-black text-2xl mb-4 ">
             ¡Respuesta incorrecta!
           </div>
 
           <button
-            onClick={() => setModalState(!modalState)}
+            onClick={() => setWrongModalState(!wrongModalState)}
             className="bg-red-500 text-white m-2 px-3 py-2 rounded flex justify-center  font-medium text-lg"
           >
             Volver a intentar
           </button>
-        </Modal>
+        </WrongModal>
         <FinalModal
           finalModalState={finalModalState}
           setFinalModalState={setFinalModalState}
         >
-        <div className="animate-zoom-trophy">
-          <WinIcon
-            sx={{
-              fontSize: 150,
-              color: "#ca8a04" ,
-            }}
-          />
+          <div className="animate-zoom-trophy">
+            <WinIcon
+              sx={{
+                fontSize: 150,
+                color: "#ca8a04",
+              }}
+            />
           </div>
           <div className="text-center font-bold text-black mb-6 ">
             <p className="text-5xl ">¡Felicidades!</p>
             <br />
-            <p className="text-3xl text-yellow-700">Has superado la primera misión.</p>
+            <p className="text-3xl text-yellow-700">
+              Has superado la primera misión.
+            </p>
           </div>
           <NavLink to="/ecogames/game-selection">
             <button
