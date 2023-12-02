@@ -1,7 +1,7 @@
 import Layout from "../components/layouts/Layout";
 import { NavLink } from "react-router-dom";
 import CloseIcon from "@mui/icons-material/Close";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import WrongModal from "../components/modal/WrongModal";
 import NavControls from "../components/layouts/NavControls";
 import goodCrossing from "../assets/images/buen-cruce-bici.jpeg";
@@ -10,23 +10,30 @@ import FinalModal from "../components/modal/FinalModal";
 import WinIcon from "@mui/icons-material/EmojiEvents";
 import final from "../assets/mp3/final.mp3";
 import wrong from "../assets/mp3/error.mp3";
+import { ProgressContext } from "../contexts/ProgressStore";
+
 
 function QuizGamePage3() {
   const [wrongModalState, setWrongModalState] = useState(false);
   const [finalModalState, setFinalModalState] = useState(false);
 
+  const { handleUpLevel2 } = useContext(ProgressContext)
+  
   const finalSound = new Audio(final);
   const wrongSound = new Audio(wrong);
 
   const finalClick = () => {
     setFinalModalState(!finalModalState);
     finalSound.play();
+    handleUpLevel2()
   };
 
   const wrongClick = () => {
     setWrongModalState(!wrongModalState);
     wrongSound.play();
   };
+
+  
 
   return (
     <Layout>

@@ -7,9 +7,12 @@ import locationLogo from "../assets/logos/logo_movilidad_europea.svg";
 import federLogo from "../assets/logos/logo_feder.svg";
 import { NavLink } from "react-router-dom";
 import intro from "../assets/mp3/intro.mp3";
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
+import { ProgressContext } from "../contexts/ProgressStore";
 
 function HomePage() {
+
+  const { handleRemoveProgress } = useContext(ProgressContext)
   
   useEffect(() => {
     const introSound = new Audio(intro);
@@ -48,7 +51,7 @@ function HomePage() {
             src={logoJuego}
             alt="Logo Eco Juegos"
           />
-          <NavLink
+          <NavLink onClick={ handleRemoveProgress() }
             to="/ecogames/presentation"
             className="animate-pulse bg-amber-700 text-white text-xl font-medium px-4 py-2 rounded-lg "
           >
