@@ -6,21 +6,28 @@ import ayuMaracenaLogo from "../assets/logos/ayu_maracena.svg";
 import locationLogo from "../assets/logos/logo_movilidad_europea.svg";
 import federLogo from "../assets/logos/logo_feder.svg";
 import { NavLink } from "react-router-dom";
-
-// bg-gradient-to-b from-lime-500 via-teal-400 to-cyan-800
+import intro from "../assets/mp3/intro.mp3";
+import { useEffect } from "react";
 
 function HomePage() {
+  
+  useEffect(() => {
+    const introSound = new Audio(intro);
+    introSound.play();
+  }, []);
+
   return (
     <div className="bg-gradient-to-t from-white via-teal-400 to-cyan-800">
       <div className="portrait:hidden p-10 h-screen flex flex-col justify-evenly">
         <p className="text-center font-bold text-sm lg:text-3xl leading-4 text-white">
-          Esta página fue desarrollada para su visualización exclusivamente en modo vertical.
+          Esta página fue desarrollada para su visualización exclusivamente en
+          modo vertical.
         </p>
-        <p className="text-center font-bold lg:text-5xl mt-5 leading-4 text-teal-800">¡Por favor rotar el
-          dispositivo a posición vertical.</p>
+        <p className="text-center font-bold lg:text-5xl mt-5 leading-4 text-teal-800">
+          ¡Por favor rotar el dispositivo a posición vertical.
+        </p>
       </div>
       <div className="landscape:hidden">
-        
         <Container
           sx={{
             display: "flex",
