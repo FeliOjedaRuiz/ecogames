@@ -17,7 +17,7 @@ function QuizGamePage3() {
   const [wrongModalState, setWrongModalState] = useState(false);
   const [finalModalState, setFinalModalState] = useState(false);
 
-  const { handleUpLevel2 } = useContext(ProgressContext)
+  const { handleUnlockLevel2 } = useContext(ProgressContext)
   
   const finalSound = new Audio(final);
   const wrongSound = new Audio(wrong);
@@ -25,7 +25,7 @@ function QuizGamePage3() {
   const finalClick = () => {
     setFinalModalState(!finalModalState);
     finalSound.play();
-    handleUpLevel2()
+    handleUnlockLevel2()
   };
 
   const wrongClick = () => {

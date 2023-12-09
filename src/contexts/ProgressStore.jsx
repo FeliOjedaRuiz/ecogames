@@ -5,13 +5,13 @@ const ProgressContext = createContext();
 function ProgressStore({ children }) {
   const [progress, setProgress] = useState(1);
 
-  const handleUpLevel2 = useCallback(() => {
+  const handleUnlockLevel2 = useCallback(() => {
     console.log("Updating progress level 2");
     setProgress(2);
     localStorage.setItem("progress", 2);
   }, []);
 
-  const handleUpLevel3 = useCallback(() => {
+  const handleUnlockLevel3 = useCallback(() => {
     console.log("Updating progress level 3");
     setProgress(3);
     localStorage.setItem("progress", 3);
@@ -24,7 +24,7 @@ function ProgressStore({ children }) {
   }, []);
 
   return (
-    <ProgressContext.Provider value={{ progress, handleUpLevel2, handleUpLevel3, handleRemoveProgress }}>
+    <ProgressContext.Provider value={{ progress, handleUnlockLevel2, handleUnlockLevel3, handleRemoveProgress }}>
       {children}
     </ProgressContext.Provider>
   );
