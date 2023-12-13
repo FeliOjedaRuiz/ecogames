@@ -12,28 +12,25 @@ import final from "../assets/mp3/final.mp3";
 import wrong from "../assets/mp3/error.mp3";
 import { ProgressContext } from "../contexts/ProgressStore";
 
-
 function QuizGamePage3() {
   const [wrongModalState, setWrongModalState] = useState(false);
   const [finalModalState, setFinalModalState] = useState(false);
 
-  const { handleUnlockLevel2 } = useContext(ProgressContext)
-  
+  const { handleUnlockLevel2 } = useContext(ProgressContext);
+
   const finalSound = new Audio(final);
   const wrongSound = new Audio(wrong);
 
   const finalClick = () => {
     setFinalModalState(!finalModalState);
     finalSound.play();
-    handleUnlockLevel2()
+    handleUnlockLevel2();
   };
 
   const wrongClick = () => {
     setWrongModalState(!wrongModalState);
     wrongSound.play();
   };
-
-  
 
   return (
     <Layout>
@@ -110,8 +107,18 @@ function QuizGamePage3() {
           <div className="text-center font-bold text-black mb-6 ">
             <p className="text-5xl ">¡Felicidades!</p>
             <br />
-            <p className="text-3xl text-yellow-700">
+            <p className="text-3xl text-yellow-600">
               Has superado la primera misión.
+            </p>
+            <br />
+            <p className="text-xl text-yellow-900">
+              Has aprendido como han evolucionado las ciudades y como nos
+              movemos en ellas.
+            </p>
+            <br />
+            <p className="text-xl text-yellow-900">
+              Ahora vemos mejor el problema de las emisiones y como nuestro
+              sistema de transporte está cambiando.
             </p>
           </div>
           <NavLink to="/ecogames/game-selection">

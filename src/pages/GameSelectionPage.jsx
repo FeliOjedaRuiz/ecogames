@@ -53,7 +53,7 @@ function GameSelectionPage() {
         </div>
       </NavLink>
       { level2 && 
-      <NavLink to="/ecogames/quiz-1" className="flex justify-evenly items-center bg-white/80 text-center h-28 rounded-lg p-3 drop-shadow-lg animate-slide2">
+      <NavLink to="/ecogames/mision2" className="flex justify-evenly items-center bg-white/80 text-center h-28 rounded-lg p-3 drop-shadow-lg animate-slide2">
         <span className="text-5xl w-1/12 m-2 font-extrabold text-emerald-600">
           2
         </span>

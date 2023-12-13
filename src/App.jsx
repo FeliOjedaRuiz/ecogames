@@ -7,6 +7,9 @@ import QuizGamePage3 from "./pages/QuizGamePage3";
 import GameSelectionPage from "./pages/GameSelectionPage";
 import Mision1Presentation from "./pages/Mision1Presentation";
 import ProgressStore from "./contexts/ProgressStore";
+import Puzzle1Page1 from "./pages/Puzzle1Page1";
+import Mision2Presentation from "./pages/Mision2Presentation";
+import Mision2IntroPage1 from "./pages/Mision2IntroPage1";
 
 function App() {
   return (
@@ -23,6 +26,9 @@ function App() {
           <Route path="/ecogames/quiz-1" element={<QuizGamePage />} />
           <Route path="/ecogames/quiz-2" element={<QuizGamePage2 />} />
           <Route path="/ecogames/quiz-3" element={<QuizGamePage3 />} />
+          <Route path="/ecogames/mision2" element={<Mision2Presentation />} />
+          <Route path="/ecogames/mision2intro1" element={<Mision2IntroPage1 />} />
+          <Route path="/ecogames/puzzle1-1" element={<Puzzle1Page1 />} />
         </Routes>
       </ProgressStore>
     </>
