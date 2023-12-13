@@ -4,14 +4,14 @@ import NavControls from "../components/layouts/NavControls";
 import WrongModal from "../components/modal/WrongModal";
 import CorrectModal from "../components/modal/CorrectModal";
 import { NavLink } from "react-router-dom";
-import CheckIcon  from "@mui/icons-material/Check";
+import CheckIcon from "@mui/icons-material/Check";
 import CloseIcon from "@mui/icons-material/Close";
 import EastIcon from "@mui/icons-material/East";
 import correct from "../assets/mp3/correct.mp3";
 import wrong from "../assets/mp3/error.mp3";
-import fullPuzzleImage from "../assets/images/Puzzle completo.png";
+import fullPuzzleImage from "../assets/images/Puzzle-2.png";
 
-function Puzzle1Page1() {
+function Puzzle1Page2() {
   const [wrongModalState, setWrongModalState] = useState(false);
   const [correctModalState, setCorrectModalState] = useState(false);
 
@@ -32,7 +32,7 @@ function Puzzle1Page1() {
     <Layout>
       <div className="bg-gradient-to-b from-white to-gray-200 w-screen relative animate-slide1 -left-10 px-6 py-6 drop-shadow-lg rounded-lg">
         <h2 className="text-teal-700 drop-shadow-lg ml-7 leading-5 text-5xl font-extrabold">
-          QUIZ PUZLE - 01
+          QUIZ PUZLE - 02
         </h2>
       </div>
 
@@ -45,22 +45,23 @@ function Puzzle1Page1() {
       </div>
       <div className="bg-gradient-to-b from-white to-gray-200 w-full animate-slide1 p-4 drop-shadow-lg rounded-lg">
         <p className="font-extrabold text-2xl text-center text-rose-700">
-          ¿Qué porcentaje de las emisiones de CO2 provienen del transporte en
-          Europa?{" "}
+        ¿Qué medio de transporte
+es más sostenible? 
         </p>
       </div>
 
       <div
         onClick={() => wrongClick()}
-        className="bg-gradient-to-b from-amber-500 to-amber-700  p-2 animate-slide3 rounded-lg shadow-lg font-bold text-white leading-5"
+        className="bg-gradient-to-b from-rose-500 to-rose-700  p-2 animate-slide3 rounded-lg shadow-lg font-bold text-white leading-5"
       >
-        <p className="drop-shadow-md text-center text-2xl">50%</p>
+        <p className="drop-shadow-md text-center text-2xl">El coche o moto</p>
       </div>
       <div
         onClick={() => correctClick()}
-        className="bg-gradient-to-b from-lime-600 to-lime-800  p-2 animate-slide4 rounded-lg shadow-lg font-bold text-white leading-5"
+        className="bg-gradient-to-b from-cyan-600 to-cyan-800  p-2 animate-slide4 rounded-lg shadow-lg font-bold text-white leading-5"
       >
-        <p className="drop-shadow-md text-center text-2xl">Más del 50%</p>
+        <p className="drop-shadow-md text-center text-2xl">La bicicleta
+</p>
       </div>
 
       <>
@@ -69,7 +70,7 @@ function Puzzle1Page1() {
           setWrongModalState={setWrongModalState}
         >
           <CloseIcon sx={{ fontSize: 150, color: "red" }} />
-          <div className="text-center font-bold text-black text-2xl mb-4">
+          <div className="text-center font-bold text-black text-2xl mb-4 ">
             ¡Respuesta incorrecta!
           </div>
 
@@ -104,4 +105,4 @@ function Puzzle1Page1() {
   );
 }
 
-export default Puzzle1Page1;
+export default Puzzle1Page2;

@@ -24,7 +24,7 @@ function Mision2IntroPage1() {
           </p>
         </div>
         <NavLink
-          to="/ecogames/puzzle1-1"
+          to="/ecogames/mision2intro2"
           className="bg-rose-700 text-white mt-6 px-3 py-1 rounded justify-around font-medium text-lg "
         >
           Seguir {">"}
