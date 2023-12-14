@@ -9,9 +9,9 @@ import CloseIcon from "@mui/icons-material/Close";
 import EastIcon from "@mui/icons-material/East";
 import correct from "../assets/mp3/correct.mp3";
 import wrong from "../assets/mp3/error.mp3";
-import puzzleImage from "../assets/images/Puzzle-2.png";
+import puzzleImage from "../assets/images/Puzzle-8.png";
 
-function Puzzle1Page2() {
+function Puzzle1Page8() {
   const [wrongModalState, setWrongModalState] = useState(false);
   const [correctModalState, setCorrectModalState] = useState(false);
 
@@ -32,7 +32,7 @@ function Puzzle1Page2() {
     <Layout>
       <div className="bg-gradient-to-b from-white to-gray-200 w-screen relative animate-slide1 -left-10 px-6 py-6 drop-shadow-lg rounded-lg">
         <h2 className="text-teal-700 drop-shadow-lg ml-7 leading-5 text-5xl font-extrabold">
-          QUIZ PUZLE - 02
+          QUIZ PUZLE - 08
         </h2>
       </div>
 
@@ -43,24 +43,33 @@ function Puzzle1Page2() {
           alt="Esquema de ciudad con movilidad sostenible"
         />
       </div>
-      <div className="bg-gradient-to-b from-white to-gray-200 w-full animate-slide1 p-4 drop-shadow-lg rounded-lg">
-        <p className="font-extrabold text-2xl text-center text-rose-700">
-          ¿Qué medio de transporte es más sostenible?
+      <div className="bg-gradient-to-b from-white to-gray-200 w-full animate-slide1 py-2 px-1 drop-shadow-lg rounded-lg">
+        <p className="font-extrabold text-lg text-center text-rose-700 leading-6">
+          En los pueblos, al ser más pequeños y tener una menor población hay
+          menos problemas de movilidad. O ¿crees que puede haber problemas
+          también?
         </p>
       </div>
-
       <div
         onClick={() => wrongClick()}
-        className="bg-gradient-to-b from-rose-500 to-rose-700  p-2 animate-slide3 rounded-lg shadow-lg font-bold text-white leading-5"
+        className="bg-gradient-to-b from-lime-500 to-lime-700  p-2 animate-slide4 rounded-lg shadow-lg font-bold text-white"
       >
-        <p className="drop-shadow-md text-center text-2xl">El coche o moto</p>
+        <p className="drop-shadow-md text-center text-lg leading-6">
+          No hay problema al vivir menos gente en el pueblo por que la
+          contaminación desaparece.
+        </p>
       </div>
       <div
         onClick={() => correctClick()}
-        className="bg-gradient-to-b from-cyan-600 to-cyan-800  p-2 animate-slide4 rounded-lg shadow-lg font-bold text-white leading-5"
+        className="bg-gradient-to-b from-yellow-400 to-yellow-700  p-2 animate-slide3 rounded-lg shadow-lg font-bold text-white"
       >
-        <p className="drop-shadow-md text-center text-2xl">La bicicleta</p>
+        <p className="drop-shadow-md text-center text-lg leading-6">
+          Es importante que haya transporte público para conectarnos con los
+          pueblos y ciudades de alrededor para reducir la movilidad en coche
+          particular.
+        </p>
       </div>
+      
 
       <>
         <WrongModal
@@ -90,7 +99,7 @@ function Puzzle1Page2() {
             <p className="text-2xl">Enhorabuena, vas por buen camino...</p>
           </div>
 
-          <NavLink to="/ecogames/puzzle1-3">
+          <NavLink to="/ecogames/puzzle1-final">
             <button className="bg-emerald-600 text-white m-2 px-3 py-2 rounded justify-around font-medium text-lg ">
               <span className="mr-2">Siguente</span>
               <EastIcon sx={{ fontSize: 30 }} />
@@ -103,4 +112,4 @@ function Puzzle1Page2() {
   );
 }
 
-export default Puzzle1Page2;
+export default Puzzle1Page8;

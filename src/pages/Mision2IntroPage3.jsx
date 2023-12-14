@@ -17,8 +17,8 @@ function Mision2IntroPage3() {
         />
 
         <div className="text-lg md:text-xl font-medium px-3">
-          <p className="leading-7">
-          HAY 8 PREGUNTAS Y CADA RESPUESTA CORRECTA REVELA UNA PARTE DEL PUZLE HASTA MOSTRAR UNA IMAGEN AL FINAL
+          <p className="leading-7 text-center">
+          Hay 8 preguntas y cada respuesta correcta revela una parte del puzle hasta mostrar una imagen al final.
           </p>
         </div>
         <NavLink

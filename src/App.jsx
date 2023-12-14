@@ -13,6 +13,12 @@ import Mision2IntroPage2 from "./pages/Mision2IntroPage2";
 import Mision2IntroPage3 from "./pages/Mision2IntroPage3";
 import Puzzle1Page1 from "./pages/Puzzle1Page1";
 import Puzzle1Page2 from "./pages/Puzzle1Page2";
+import Puzzle1Page3 from "./pages/Puzzle1Page3";
+import Puzzle1Page4 from "./pages/Puzzle1Page4";
+import Puzzle1Page5 from "./pages/Puzzle1Page5";
+import Puzzle1Page6 from "./pages/Puzzle1Page6";
+import Puzzle1Page7 from "./pages/Puzzle1Page7";
+import Puzzle1Page8 from "./pages/Puzzle1Page8";
 
 function App() {
   return (
@@ -44,6 +50,12 @@ function App() {
           />
           <Route path="/ecogames/puzzle1-1" element={<Puzzle1Page1 />} />
           <Route path="/ecogames/puzzle1-2" element={<Puzzle1Page2 />} />
+          <Route path="/ecogames/puzzle1-3" element={<Puzzle1Page3 />} />
+          <Route path="/ecogames/puzzle1-4" element={<Puzzle1Page4 />} />
+          <Route path="/ecogames/puzzle1-5" element={<Puzzle1Page5 />} />
+          <Route path="/ecogames/puzzle1-6" element={<Puzzle1Page6 />} />
+          <Route path="/ecogames/puzzle1-7" element={<Puzzle1Page7 />} />
+          <Route path="/ecogames/puzzle1-8" element={<Puzzle1Page8 />} />
         </Routes>
       </ProgressStore>
     </>
