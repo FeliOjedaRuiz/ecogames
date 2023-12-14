@@ -19,6 +19,7 @@ import Puzzle1Page5 from "./pages/Puzzle1Page5";
 import Puzzle1Page6 from "./pages/Puzzle1Page6";
 import Puzzle1Page7 from "./pages/Puzzle1Page7";
 import Puzzle1Page8 from "./pages/Puzzle1Page8";
+import Puzzle1FinalPage from "./pages/Puzzle1FinalPage";
 
 function App() {
   return (
@@ -56,6 +57,7 @@ function App() {
           <Route path="/ecogames/puzzle1-6" element={<Puzzle1Page6 />} />
           <Route path="/ecogames/puzzle1-7" element={<Puzzle1Page7 />} />
           <Route path="/ecogames/puzzle1-8" element={<Puzzle1Page8 />} />
+          <Route path="/ecogames/puzzle1-final" element={<Puzzle1FinalPage />} />
         </Routes>
       </ProgressStore>
     </>

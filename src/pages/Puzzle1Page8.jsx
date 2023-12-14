@@ -88,6 +88,7 @@ function Puzzle1Page8() {
             Volver a intentar
           </button>
         </WrongModal>
+        
         <CorrectModal
           correctModalState={correctModalState}
           setCorrectModalState={setCorrectModalState}
