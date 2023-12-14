@@ -30,8 +30,8 @@ function Puzzle1Page1() {
 
   return (
     <Layout>
-      <div className="bg-gradient-to-b from-white to-gray-200 w-screen relative animate-slide1 -left-10 px-6 py-6 drop-shadow-lg rounded-lg">
-        <h2 className="text-teal-700 drop-shadow-lg ml-7 leading-5 text-5xl font-extrabold">
+      <div className="bg-gradient-to-b from-white to-gray-200 w-screen relative animate-slide1 -left-10 px-6 py-3 drop-shadow-lg rounded-lg">
+        <h2 className="text-teal-700 drop-shadow-lg ml-7 leading-5 text-3xl md:text-5xl font-extrabold">
           QUIZ PUZLE - 01
         </h2>
       </div>
@@ -43,8 +43,8 @@ function Puzzle1Page1() {
           alt="Esquema de ciudad con movilidad sostenible"
         />
       </div>
-      <div className="bg-gradient-to-b from-white to-gray-200 w-full animate-slide1 p-4 drop-shadow-lg rounded-lg">
-        <p className="font-extrabold text-2xl text-center text-rose-700">
+      <div className="bg-gradient-to-b from-white to-gray-200 w-full animate-slide1 p-1 md:p-4 drop-shadow-lg rounded-lg">
+        <p className="font-extrabold md:text-2xl text-center text-rose-700">
           ¿Qué porcentaje de las emisiones de CO2 provienen del transporte en
           Europa?{" "}
         </p>
@@ -54,13 +54,13 @@ function Puzzle1Page1() {
         onClick={() => wrongClick()}
         className="bg-gradient-to-b from-amber-500 to-amber-700  p-2 animate-slide3 rounded-lg shadow-lg font-bold text-white leading-5"
       >
-        <p className="drop-shadow-md text-center text-2xl">50%</p>
+        <p className="drop-shadow-md text-center text-xl md:text-2xl">50%</p>
       </div>
       <div
         onClick={() => correctClick()}
         className="bg-gradient-to-b from-lime-600 to-lime-800  p-2 animate-slide4 rounded-lg shadow-lg font-bold text-white leading-5"
       >
-        <p className="drop-shadow-md text-center text-2xl">Más del 50%</p>
+        <p className="drop-shadow-md text-center text-xl md:text-2xl">Más del 50%</p>
       </div>
 
       <>

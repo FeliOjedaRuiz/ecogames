@@ -30,8 +30,8 @@ function Puzzle1Page8() {
 
   return (
     <Layout>
-      <div className="bg-gradient-to-b from-white to-gray-200 w-screen relative animate-slide1 -left-10 px-6 py-6 drop-shadow-lg rounded-lg">
-        <h2 className="text-teal-700 drop-shadow-lg ml-7 leading-5 text-5xl font-extrabold">
+      <div className="bg-gradient-to-b from-white to-gray-200 w-screen relative animate-slide1 -left-10 px-6 py-3 drop-shadow-lg rounded-lg">
+        <h2 className="text-teal-700 drop-shadow-lg ml-7 leading-5 text-3xl md:text-5xl font-extrabold">
           QUIZ PUZLE - 08
         </h2>
       </div>
@@ -43,8 +43,8 @@ function Puzzle1Page8() {
           alt="Esquema de ciudad con movilidad sostenible"
         />
       </div>
-      <div className="bg-gradient-to-b from-white to-gray-200 w-full animate-slide1 py-2 px-1 drop-shadow-lg rounded-lg">
-        <p className="font-extrabold text-lg text-center text-rose-700 leading-6">
+      <div className="bg-gradient-to-b from-white to-gray-200 w-full animate-slide1 p-2 drop-shadow-lg rounded-lg">
+        <p className="font-extrabold text-sm md:text-lg text-center text-rose-700 leading-4 md:leading-6">
           En los pueblos, al ser más pequeños y tener una menor población hay
           menos problemas de movilidad. O ¿crees que puede haber problemas
           también?
@@ -54,7 +54,7 @@ function Puzzle1Page8() {
         onClick={() => wrongClick()}
         className="bg-gradient-to-b from-lime-500 to-lime-700  p-2 animate-slide4 rounded-lg shadow-lg font-bold text-white"
       >
-        <p className="drop-shadow-md text-center text-lg leading-6">
+        <p className="drop-shadow-md text-center text-xs leading-4 md:text-lg md:leading-6">
           No hay problema al vivir menos gente en el pueblo por que la
           contaminación desaparece.
         </p>
@@ -63,7 +63,7 @@ function Puzzle1Page8() {
         onClick={() => correctClick()}
         className="bg-gradient-to-b from-yellow-400 to-yellow-700  p-2 animate-slide3 rounded-lg shadow-lg font-bold text-white"
       >
-        <p className="drop-shadow-md text-center text-lg leading-6">
+        <p className="drop-shadow-md text-center text-xs leading-4 md:text-lg md:leading-6">
           Es importante que haya transporte público para conectarnos con los
           pueblos y ciudades de alrededor para reducir la movilidad en coche
           particular.

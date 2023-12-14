@@ -30,8 +30,8 @@ function Puzzle1Page4() {
 
   return (
     <Layout>
-      <div className="bg-gradient-to-b from-white to-gray-200 w-screen relative animate-slide1 -left-10 px-6 py-6 drop-shadow-lg rounded-lg">
-        <h2 className="text-teal-700 drop-shadow-lg ml-7 leading-5 text-5xl font-extrabold">
+      <div className="bg-gradient-to-b from-white to-gray-200 w-screen relative animate-slide1 -left-10 px-6 py-3 drop-shadow-lg rounded-lg">
+        <h2 className="text-teal-700 drop-shadow-lg ml-7 leading-5 text-3xl md:text-5xl font-extrabold">
           QUIZ PUZLE - 04
         </h2>
       </div>
@@ -43,8 +43,8 @@ function Puzzle1Page4() {
           alt="Esquema de ciudad con movilidad sostenible"
         />
       </div>
-      <div className="bg-gradient-to-b from-white to-gray-200 w-full animate-slide1 p-4 drop-shadow-lg rounded-lg">
-        <p className="font-extrabold text-xl text-center text-rose-700">
+      <div className="bg-gradient-to-b from-white to-gray-200 w-full animate-slide1 p-1 md:p-3 drop-shadow-lg rounded-lg">
+        <p className="font-extrabold  md:text-lg text-center leading-5 text-rose-700">
         ¿Qué medio de transporte es el más contaminante considerando también el número de personas que lo pueden utilizar a la vez? 
         </p>
       </div>
@@ -52,7 +52,7 @@ function Puzzle1Page4() {
         onClick={() => correctClick()}
         className="bg-gradient-to-b from-teal-400 to-teal-700  p-2 animate-slide3 rounded-lg shadow-lg font-bold text-white"
       >
-        <p className="drop-shadow-md text-center text-2xl leading-6">
+        <p className="drop-shadow-md text-center md:text-2xl leading-6">
         Coche de combustión
         </p>
       </div>
@@ -60,7 +60,7 @@ function Puzzle1Page4() {
         onClick={() => wrongClick()}
         className="bg-gradient-to-b from-pink-500 to-pink-700  p-2 animate-slide4 rounded-lg shadow-lg font-bold text-white"
       >
-        <p className="drop-shadow-md text-center text-2xl leading-6">
+        <p className="drop-shadow-md text-center md:text-2xl leading-6">
         Autobús
 
         </p>
