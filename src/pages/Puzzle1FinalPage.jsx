@@ -1,11 +1,7 @@
 import Layout from "../components/layouts/Layout";
 import { NavLink } from "react-router-dom";
-import CloseIcon from "@mui/icons-material/Close";
 import { useContext, useState } from "react";
-import WrongModal from "../components/modal/WrongModal";
 import NavControls from "../components/layouts/NavControls";
-import goodCrossing from "../assets/images/buen-cruce-bici.jpeg";
-import badCrossing from "../assets/images/mal-cruce-bici.jpeg";
 import FinalModal from "../components/modal/FinalModal";
 import WinIcon from "@mui/icons-material/EmojiEvents";
 import final from "../assets/mp3/final.mp3";
@@ -76,9 +72,9 @@ function Puzzle1FinalPage() {
             </p>
             <br />
             <p className="md:text-xl text-yellow-900">
-            Te has convertido en un experto de movilidad y transporte pero ¿sabes aplicar estos conocimientos a tu día a día? 
+              Te has convertido en un experto de movilidad y transporte pero
+              ¿sabes aplicar estos conocimientos a tu día a día?
             </p>
-            
           </div>
           <NavLink to="/ecogames/game-selection">
             <button
