@@ -68,7 +68,7 @@ function Puzzle1FinalPage() {
             <p className="text-5xl ">¡Muy Bien!</p>
             <br />
             <p className=" md:text-3xl text-yellow-600">
-              Has pasado la segunda misión.
+              Has pasado tu primera misión.
             </p>
             <br />
             <p className="md:text-xl text-yellow-900">

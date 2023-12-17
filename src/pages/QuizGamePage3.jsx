@@ -108,7 +108,7 @@ function QuizGamePage3() {
             <p className="text-5xl ">¡Felicidades!</p>
             <br />
             <p className="text-3xl text-yellow-600">
-              Has superado la primera misión.
+              Has superado la segunda misión.
             </p>
             <br />
             <p className="text-xl text-yellow-900">
