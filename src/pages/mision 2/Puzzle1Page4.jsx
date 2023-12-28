@@ -45,7 +45,8 @@ function Puzzle1Page4() {
       </div>
       <div className="bg-gradient-to-b from-white to-gray-200 w-full animate-slide1 p-1 md:p-3 drop-shadow-lg rounded-lg">
         <p className="font-extrabold  md:text-lg text-center leading-5 text-rose-700">
-        ¿Qué medio de transporte es el más contaminante considerando también el número de personas que lo pueden utilizar a la vez? 
+          ¿Qué medio de transporte es el más contaminante considerando también
+          el número de personas que lo pueden utilizar a la vez?
         </p>
       </div>
       <div
@@ -53,7 +54,7 @@ function Puzzle1Page4() {
         className="bg-gradient-to-b from-teal-400 to-teal-700  p-2 animate-slide3 rounded-lg shadow-lg font-bold text-white"
       >
         <p className="drop-shadow-md text-center md:text-2xl leading-6">
-        Coche de combustión
+          Coche de combustión
         </p>
       </div>
       <div
@@ -61,18 +62,16 @@ function Puzzle1Page4() {
         className="bg-gradient-to-b from-pink-500 to-pink-700  p-2 animate-slide4 rounded-lg shadow-lg font-bold text-white"
       >
         <p className="drop-shadow-md text-center md:text-2xl leading-6">
-        Autobús
-
+          Autobús
         </p>
       </div>
-      
 
       <>
         <WrongModal
           wrongModalState={wrongModalState}
           setWrongModalState={setWrongModalState}
         >
-          <CloseIcon sx={{ fontSize: 150, color: "red" }} />
+          <CloseIcon sx={{ fontSize: { xs: 200, md: 500 }, color: "red" }} />
           <div className="text-center font-bold text-black text-2xl mb-4 ">
             ¡Respuesta incorrecta!
           </div>
@@ -88,7 +87,9 @@ function Puzzle1Page4() {
           correctModalState={correctModalState}
           setCorrectModalState={setCorrectModalState}
         >
-          <CheckIcon sx={{ fontSize: 150, color: "#059669" }} />
+          <CheckIcon
+            sx={{ fontSize: { xs: 200, md: 500 }, color: "#059669" }}
+          />
           <div className="text-center font-bold text-black mb-4 ">
             <p className="text-4xl">¡Correcto!</p>
             <br />

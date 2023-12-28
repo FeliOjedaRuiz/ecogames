@@ -72,7 +72,7 @@ function QuizGamePage1() {
           wrongModalState={wrongModalState}
           setWrongModalState={setWrongModalState}
         >
-          <CloseIcon sx={{ fontSize: 150, color: "red" }} />
+          <CloseIcon sx={{ fontSize: { xs: 200, md: 500 }, color: "red" }} />
           <div className="text-center font-bold text-black text-2xl mb-4 ">
             ¡Respuesta incorrecta!
           </div>
@@ -89,7 +89,7 @@ function QuizGamePage1() {
           setCorrectModalState={setCorrectModalState}
         >
           <CheckIcon
-            sx={{ fontSize: { xs: 100, md: 500 }, color: "#059669" }}
+            sx={{ fontSize: { xs:2100, md: 500 }, color: "#059669" }}
           />
           <div className="text-center font-bold text-black mb-4 ">
             <p className="text-4xl">¡Correcto!</p>

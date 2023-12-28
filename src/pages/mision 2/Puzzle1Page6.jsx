@@ -60,7 +60,9 @@ function Puzzle1Page6() {
         onClick={() => wrongClick()}
         className="bg-gradient-to-b from-cyan-500 to-cyan-700  p-2 animate-slide4 rounded-lg shadow-lg font-bold text-white"
       >
-        <p className="drop-shadow-md text-center text-lg md:text-2xl leading-6">Una moto</p>
+        <p className="drop-shadow-md text-center text-lg md:text-2xl leading-6">
+          Una moto
+        </p>
       </div>
 
       <>
@@ -68,7 +70,7 @@ function Puzzle1Page6() {
           wrongModalState={wrongModalState}
           setWrongModalState={setWrongModalState}
         >
-          <CloseIcon sx={{ fontSize: 150, color: "red" }} />
+          <CloseIcon sx={{ fontSize: { xs: 200, md: 500 }, color: "red" }} />
           <div className="text-center font-bold text-black text-2xl mb-4 ">
             ¡Respuesta incorrecta!
           </div>
@@ -84,7 +86,9 @@ function Puzzle1Page6() {
           correctModalState={correctModalState}
           setCorrectModalState={setCorrectModalState}
         >
-          <CheckIcon sx={{ fontSize: 150, color: "#059669" }} />
+          <CheckIcon
+            sx={{ fontSize: { xs: 200, md: 500 }, color: "#059669" }}
+          />
           <div className="text-center font-bold text-black mb-4 ">
             <p className="text-4xl">¡Correcto!</p>
             <br />

@@ -80,8 +80,8 @@ function GameSelectionPage() {
       )}
       {!level2 && (
         <div className="flex justify-evenly items-center bg-white/80 text-center h-28 rounded-lg p-3 drop-shadow-lg animate-slide-r-3">
-          <div className="absolute animate-wiki">
-            <LockIcon sx={{ fontSize: { xs: 80, md: 200 }, color: "#4b5563" }} />
+          <div className="absolute left-0 animate-wiki">
+            <LockIcon sx={{ fontSize: { xs: 80, md: 200 }, color: "#a16207" }} />
           </div>
           <span className="text-5xl w-1/12 m-2 font-extrabold text-gray-400">
             2
@@ -96,7 +96,7 @@ function GameSelectionPage() {
             <img
               src={bike}
               alt=""
-              className="h-24 z-10 animate-wiki relative -top-6 grayscale"
+              className="h-24 z-10 relative -top-6 grayscale"
             />
             <button className="bg-gray-400 py-1 px-3 -mt-9 rounded text-gray-100 text-md md:text-xl font-medium">
               Comenzar
@@ -127,8 +127,8 @@ function GameSelectionPage() {
       )}
       {!level3 && (
         <div className="flex justify-evenly items-center bg-white/80 text-center h-28 rounded-lg p-3 drop-shadow-lg animate-slide2">
-        <div className="absolute animate-wiki">
-            <LockIcon sx={{ fontSize: { xs: 80, md: 200 }, color: "#4b5563" }} />
+        <div className="absolute left-0 animate-wiki-r">
+            <LockIcon sx={{ fontSize: { xs: 80, md: 200 }, color: "#a16207" }} />
           </div>
           <span className="text-5xl w-1/12 m-2 font-extrabold text-gray-400">
             3
@@ -142,7 +142,7 @@ function GameSelectionPage() {
             <img
               src={train}
               alt=""
-              className="w-full z-10 animate-wiki-r grayscale"
+              className="w-full z-10 grayscale"
             />
             <button className="bg-gray-400 py-1 px-3 -mt-2 rounded text-gray-100 text-md md:text-xl font-medium">
               Comenzar

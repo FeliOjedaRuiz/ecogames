@@ -76,7 +76,7 @@ function QuizGamePage3() {
           wrongModalState={wrongModalState}
           setWrongModalState={setWrongModalState}
         >
-          <CloseIcon sx={{ fontSize: 150, color: "red" }} />
+          <CloseIcon sx={{ fontSize: { xs: 200, md: 500 }, color: "red" }} />
           <div className="text-center font-bold text-black text-2xl mb-4 ">
             ¡Respuesta incorrecta!
           </div>
@@ -95,8 +95,7 @@ function QuizGamePage3() {
           <div className="animate-zoom-trophy">
             <WinIcon
               sx={{
-                fontSize: {xs:100,
-                md: 500},
+                fontSize: { xs: 200, md: 500 },
                 color: "#ca8a04",
               }}
             />

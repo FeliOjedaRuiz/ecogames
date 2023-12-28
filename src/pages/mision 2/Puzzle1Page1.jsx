@@ -4,7 +4,7 @@ import NavControls from "../../components/layouts/NavControls";
 import WrongModal from "../../components/modal/WrongModal";
 import CorrectModal from "../../components/modal/CorrectModal";
 import { NavLink } from "react-router-dom";
-import CheckIcon  from "@mui/icons-material/Check";
+import CheckIcon from "@mui/icons-material/Check";
 import CloseIcon from "@mui/icons-material/Close";
 import EastIcon from "@mui/icons-material/East";
 import correct from "../../assets/mp3/correct.mp3";
@@ -60,7 +60,9 @@ function Puzzle1Page1() {
         onClick={() => correctClick()}
         className="bg-gradient-to-b from-lime-600 to-lime-800  p-2 animate-slide4 rounded-lg shadow-lg font-bold text-white leading-5"
       >
-        <p className="drop-shadow-md text-center text-xl md:text-2xl">Más del 50%</p>
+        <p className="drop-shadow-md text-center text-xl md:text-2xl">
+          Más del 50%
+        </p>
       </div>
 
       <>
@@ -68,7 +70,7 @@ function Puzzle1Page1() {
           wrongModalState={wrongModalState}
           setWrongModalState={setWrongModalState}
         >
-          <CloseIcon sx={{ fontSize: 150, color: "red" }} />
+          <CloseIcon sx={{ fontSize: { xs: 200, md: 500 }, color: "red" }} />
           <div className="text-center font-bold text-black text-2xl mb-4">
             ¡Respuesta incorrecta!
           </div>
@@ -84,7 +86,9 @@ function Puzzle1Page1() {
           correctModalState={correctModalState}
           setCorrectModalState={setCorrectModalState}
         >
-          <CheckIcon sx={{ fontSize: 150, color: "#059669" }} />
+          <CheckIcon
+            sx={{ fontSize: { xs: 200, md: 500 }, color: "#059669" }}
+          />
           <div className="text-center font-bold text-black mb-4 ">
             <p className="text-4xl">¡Correcto!</p>
             <br />

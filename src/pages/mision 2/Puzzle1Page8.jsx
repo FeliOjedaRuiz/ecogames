@@ -69,14 +69,13 @@ function Puzzle1Page8() {
           particular.
         </p>
       </div>
-      
 
       <>
         <WrongModal
           wrongModalState={wrongModalState}
           setWrongModalState={setWrongModalState}
         >
-          <CloseIcon sx={{ fontSize: 150, color: "red" }} />
+          <CloseIcon sx={{ fontSize: { xs: 200, md: 500 }, color: "red" }} />
           <div className="text-center font-bold text-black text-2xl mb-4 ">
             ¡Respuesta incorrecta!
           </div>
@@ -88,12 +87,14 @@ function Puzzle1Page8() {
             Volver a intentar
           </button>
         </WrongModal>
-        
+
         <CorrectModal
           correctModalState={correctModalState}
           setCorrectModalState={setCorrectModalState}
         >
-          <CheckIcon sx={{ fontSize: 150, color: "#059669" }} />
+          <CheckIcon
+            sx={{ fontSize: { xs: 200, md: 500 }, color: "#059669" }}
+          />
           <div className="text-center font-bold text-black mb-4 ">
             <p className="text-4xl">¡Correcto!</p>
             <br />
