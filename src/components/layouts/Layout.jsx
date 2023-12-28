@@ -11,7 +11,7 @@ function Layout({ children }) {
         </p>
       </div>
       <div className="landscape:hidden">
-        <div className="w-screen h-screen flex flex-col justify-evenly absolute -top-16 pt-16 pb-14 md:pb-0 px-5 bg-gradient-to-t from-white via-teal-400 to-cyan-800 overflow-hidden">
+        <div className="w-screen h-screen flex flex-col justify-evenly absolute -top-16 pt-20 md:pt-16 pb-14 md:pb-0 px-5 bg-gradient-to-t from-white via-teal-400 to-cyan-800 overflow-hidden">
           {children}
         </div>
       </div>

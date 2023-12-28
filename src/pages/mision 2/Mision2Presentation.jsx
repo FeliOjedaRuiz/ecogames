@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
-import Layout from "../components/layouts/Layout";
-import NavControls from "./../components/layouts/NavControls";
+import Layout from "../../components/layouts/Layout";
+import NavControls from "../../components/layouts/NavControls";
 
 export default function Mision2Presentation() {
   return (

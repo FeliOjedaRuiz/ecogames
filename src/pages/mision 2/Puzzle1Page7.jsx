@@ -1,17 +1,17 @@
 import { useState } from "react";
-import Layout from "../components/layouts/Layout";
-import NavControls from "../components/layouts/NavControls";
-import WrongModal from "../components/modal/WrongModal";
-import CorrectModal from "../components/modal/CorrectModal";
+import Layout from "../../components/layouts/Layout";
+import NavControls from "../../components/layouts/NavControls";
+import WrongModal from "../../components/modal/WrongModal";
+import CorrectModal from "../../components/modal/CorrectModal";
 import { NavLink } from "react-router-dom";
 import CheckIcon from "@mui/icons-material/Check";
 import CloseIcon from "@mui/icons-material/Close";
 import EastIcon from "@mui/icons-material/East";
-import correct from "../assets/mp3/correct.mp3";
-import wrong from "../assets/mp3/error.mp3";
-import puzzleImage from "../assets/images/Puzzle-5.png";
+import correct from "../../assets/mp3/correct.mp3";
+import wrong from "../../assets/mp3/error.mp3";
+import puzzleImage from "../../assets/images/puzzle-7.png";
 
-function Puzzle1Page5() {
+function Puzzle1Page7() {
   const [wrongModalState, setWrongModalState] = useState(false);
   const [correctModalState, setCorrectModalState] = useState(false);
 
@@ -32,7 +32,7 @@ function Puzzle1Page5() {
     <Layout>
       <div className="bg-gradient-to-b from-white to-gray-200 w-screen relative animate-slide1 -left-10 px-6 py-3 drop-shadow-lg rounded-lg">
         <h2 className="text-teal-700 drop-shadow-lg ml-7 leading-5 text-3xl md:text-5xl font-extrabold">
-          QUIZ PUZLE - 05
+          QUIZ PUZLE - 07
         </h2>
       </div>
 
@@ -43,27 +43,26 @@ function Puzzle1Page5() {
           alt="Esquema de ciudad con movilidad sostenible"
         />
       </div>
-      <div className="bg-gradient-to-b from-white to-gray-200 w-full animate-slide1 p-1 md:p-4 drop-shadow-lg rounded-lg">
-        <p className="font-extrabold md:text-2xl leading-5 text-center text-rose-700">
-          ¿Qué es importante considerar para entender el nivel de sostenibilidad
-          de un medio de transporte?
+      <div className="bg-gradient-to-b from-white to-gray-200 w-full animate-slide1 p-2 md:p-4 drop-shadow-lg rounded-lg">
+        <p className="font-extrabold md:text-2xl text-center text-rose-700">
+          ¿Qué problemas crees que puede causar a la salud una mala calidad del
+          aire?
         </p>
       </div>
-      
       <div
         onClick={() => wrongClick()}
-        className="bg-gradient-to-b from-sky-500 to-sky-700  p-2 animate-slide4 rounded-lg shadow-lg font-bold text-white"
+        className="bg-gradient-to-b from-rose-500 to-rose-700  p-2 animate-slide4 rounded-lg shadow-lg font-bold text-white"
       >
-        <p className="drop-shadow-md text-center md:text-lg leading-6">
-          Su velocidad y cuánto calor emite.
+        <p className="drop-shadow-md text-center md:text-xl leading-6">
+          Problemas de piel y dolores de cabeza.
         </p>
       </div>
       <div
         onClick={() => correctClick()}
-        className="bg-gradient-to-b from-green-500 to-green-800  p-2 animate-slide3 rounded-lg shadow-lg font-bold text-white"
+        className="bg-gradient-to-b from-emerald-400 to-emerald-700  p-2 animate-slide3 rounded-lg shadow-lg font-bold text-white"
       >
-        <p className="drop-shadow-md text-center md:text-lg leading-6">
-          Que fuente de energía usa y cuánta gente puede llevar al mismo tiempo.
+        <p className="drop-shadow-md text-center md:text-xl leading-5">
+          Enfermedades cardiovasculares y respiratorias.
         </p>
       </div>
 
@@ -95,7 +94,7 @@ function Puzzle1Page5() {
             <p className="text-2xl">Enhorabuena, vas por buen camino...</p>
           </div>
 
-          <NavLink to="/ecogames/puzzle1-6">
+          <NavLink to="/ecogames/puzzle1-8">
             <button className="bg-emerald-600 text-white m-2 px-3 py-2 rounded justify-around font-medium text-lg ">
               <span className="mr-2">Siguente</span>
               <EastIcon sx={{ fontSize: 30 }} />
@@ -108,4 +107,4 @@ function Puzzle1Page5() {
   );
 }
 
-export default Puzzle1Page5;
+export default Puzzle1Page7;

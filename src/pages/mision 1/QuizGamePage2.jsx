@@ -1,15 +1,15 @@
-import Layout from "../components/layouts/Layout";
-import piramideMovilidad from "../assets/images/piramide-movilidad.png";
-import CorrectModal from "../components/modal/CorrectModal";
+import Layout from "../../components/layouts/Layout";
+import piramideMovilidad from "../../assets/images/piramide-movilidad.png";
+import CorrectModal from "../../components/modal/CorrectModal";
 import { NavLink } from "react-router-dom";
 import CloseIcon from "@mui/icons-material/Close";
 import CheckIcon from "@mui/icons-material/Check";
 import EastIcon from "@mui/icons-material/East";
 import { useState } from "react";
-import WrongModal from "../components/modal/WrongModal";
-import NavControls from "../components/layouts/NavControls";
-import correct from "../assets/mp3/correct.mp3";
-import wrong from "../assets/mp3/error.mp3";
+import WrongModal from "../../components/modal/WrongModal";
+import NavControls from "../../components/layouts/NavControls";
+import correct from "../../assets/mp3/correct.mp3";
+import wrong from "../../assets/mp3/error.mp3";
 
 function QuizGamePage2() {
   const [wrongModalState, setWrongModalState] = useState(false);
@@ -30,8 +30,8 @@ function QuizGamePage2() {
 
   return (
     <Layout>
-      <div className="bg-gradient-to-b from-white to-gray-200 w-screen relative animate-slide1 -left-10 px-6 py-3 drop-shadow-lg rounded-lg">
-        <p className="text-teal-700 drop-shadow-lg ml-7 leading-5 text-lg">
+      <div className="bg-gradient-to-b from-white to-gray-200 w-screen relative animate-slide1 -left-10 px-4 py-2 drop-shadow-lg rounded-lg">
+        <p className="text-teal-700 drop-shadow-lg ml-7 leading-4 md:leading-6 text-sm md:text-xl">
           Mira esta imagen y analiza los tipos de transporte, sus ventajas y
           desventajas.
           <p className="mt-2 font-bold text-rose-600">
@@ -43,7 +43,7 @@ function QuizGamePage2() {
 
       <div className="w-full p-2 justify-center flex animate-slide2">
         <img
-          className="rounded-xl w-full border-4 border-teal-300 shadow-lg"
+          className="rounded-xl w-10/12 md:w-full border-4 border-teal-300 shadow-lg"
           src={piramideMovilidad}
           alt="Esquema de ciudad con movilidad sostenible"
         />
@@ -51,17 +51,17 @@ function QuizGamePage2() {
 
       <div
         onClick={() => correctClick()}
-        className="bg-gradient-to-b from-amber-500 to-amber-700  m-2 p-2 animate-slide3 rounded-lg shadow-lg font-bold text-white leading-5"
+        className="bg-gradient-to-b from-amber-500 to-amber-700  m-2 p-2 animate-slide3 rounded-lg shadow-lg font-bold text-white leading-4 md:leading-5"
       >
-        <span className="drop-shadow-md">
+        <span className="drop-shadow-md text-xs md:text-xl">
           B{") "}Porque mover más gente a la vez es más eficiente.
         </span>
       </div>
       <div
         onClick={() => wrongClick()}
-        className="bg-gradient-to-b from-teal-500 to-teal-800 m-2 p-2 animate-slide4 rounded-lg shadow-lg font-bold text-white leading-5"
+        className="bg-gradient-to-b from-teal-500 to-teal-800 m-2 p-2 animate-slide4 rounded-lg shadow-lg font-bold text-white leading-4 md:leading-5"
       >
-        <span className="drop-shadow-md">
+        <span className="drop-shadow-md text-xs md:text-xl">
           A{") "} Porque se mueven más rápido.
         </span>
       </div>
@@ -87,7 +87,8 @@ function QuizGamePage2() {
           correctModalState={correctModalState}
           setCorrectModalState={setCorrectModalState}
         >
-          <CheckIcon sx={{ fontSize: 150, color: "#059669" }} />
+          <CheckIcon sx={{ fontSize: {xs:100,
+                md: 500}, color: "#059669" }} />
           <div className="text-center font-bold text-black mb-4 ">
             <p className="text-4xl">¡Correcto!</p>
             <br />

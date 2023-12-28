@@ -14,10 +14,10 @@ function PresentationPage() {
         }}
       >
       
-        <h1 className="text-white drop-shadow-lg text-3xl leading-tight text-center font-bold">
-          La movilidad sostenible cambiará nuestras vidas y ciudades... ¿Como?
+        <h1 className="text-white drop-shadow-lg text-2xl md:text-4xl text-center font-bold">
+          La movilidad sostenible <br /> cambiará nuestras vidas <br /> y ciudades... ¿Como?
         </h1>
-        <div className="mx-2 md:text-xl p-5 bg-white/50 text-lg rounded-2xl text-cyan-900 font-medium">
+        <div className="mx-2  md:text-2xl p-5 bg-white/50  rounded-2xl text-cyan-900 font-medium">
           <p className="leading-tight">
             El alcalde de tu municipio ha oído hablar de ti, de tu grupo y de tu
             clase.{" "}
@@ -31,13 +31,13 @@ function PresentationPage() {
             movilidad y cómo se pueden solucionar.{" "}
           </p>
 
-          <p className="leading-tight mt-5 text-center text-3xl md:text-4xl">
+          <p className="leading-tight mt-5 text-center font-bold text-3xl md:text-4xl">
             ¿Te atreves?
           </p>
         </div>
         <NavLink
           to="/ecogames/game-selection"
-          className=" animate-pulse text-center bg-amber-700 text-white text-xl md:text-2xl font-medium px-4 py-2 rounded-lg"
+          className=" animate-pulse text-center bg-amber-700 text-white  md:text-3xl font-medium px-4 py-2 rounded-lg"
         >
           ¡A por ello!
         </NavLink>

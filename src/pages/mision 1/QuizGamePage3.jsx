@@ -1,22 +1,19 @@
-import Layout from "../components/layouts/Layout";
+import Layout from "../../components/layouts/Layout";
 import { NavLink } from "react-router-dom";
 import CloseIcon from "@mui/icons-material/Close";
-import { useContext, useState } from "react";
-import WrongModal from "../components/modal/WrongModal";
-import NavControls from "../components/layouts/NavControls";
-import goodCrossing from "../assets/images/buen-cruce-bici.jpeg";
-import badCrossing from "../assets/images/mal-cruce-bici.jpeg";
-import FinalModal from "../components/modal/FinalModal";
+import { useState } from "react";
+import WrongModal from "../../components/modal/WrongModal";
+import NavControls from "../../components/layouts/NavControls";
+import goodCrossing from "../../assets/images/buen-cruce-bici.jpeg";
+import badCrossing from "../../assets/images/mal-cruce-bici.jpeg";
+import FinalModal from "../../components/modal/FinalModal";
 import WinIcon from "@mui/icons-material/EmojiEvents";
-import final from "../assets/mp3/final.mp3";
-import wrong from "../assets/mp3/error.mp3";
-import { ProgressContext } from "../contexts/ProgressStore";
+import final from "../../assets/mp3/final.mp3";
+import wrong from "../../assets/mp3/error.mp3";
 
 function QuizGamePage3() {
   const [wrongModalState, setWrongModalState] = useState(false);
   const [finalModalState, setFinalModalState] = useState(false);
-
-  const { handleUnlockLevel2 } = useContext(ProgressContext);
 
   const finalSound = new Audio(final);
   const wrongSound = new Audio(wrong);
@@ -24,7 +21,6 @@ function QuizGamePage3() {
   const finalClick = () => {
     setFinalModalState(!finalModalState);
     finalSound.play();
-    handleUnlockLevel2();
   };
 
   const wrongClick = () => {
@@ -34,8 +30,8 @@ function QuizGamePage3() {
 
   return (
     <Layout>
-      <div className="bg-gradient-to-b from-white to-gray-200 animate-slide1 px-3 py-3 drop-shadow-lg rounded-lg">
-        <p className="text-orange-600 drop-shadow-lg leading-6 text-xl mb-2 text-center font-bold">
+      <div className="bg-gradient-to-b from-white to-gray-200 animate-slide1 px-6 py-3 drop-shadow-lg rounded-lg">
+        <p className="text-orange-600 drop-shadow-lg text-sm md:text-xl mb-2 text-center font-bold">
           Mira este video para saber cómo moverte en bici de forma segura.
         </p>
         <iframe
@@ -47,8 +43,8 @@ function QuizGamePage3() {
         ></iframe>
       </div>
 
-      <div className="bg-gradient-to-b from-white to-gray-200 animate-slide-r-2 px-6 py-3 drop-shadow-lg rounded-lg">
-        <p className="text-teal-700 drop-shadow-lg  leading-5 text-md">
+      <div className="bg-gradient-to-b from-white to-gray-200 animate-slide-r-2 px-4 py-2 drop-shadow-lg rounded-lg my-3">
+        <p className="text-teal-700 drop-shadow-lg  md:leading-5 text-xs md:text-lg">
           Cuando vas caminando por una acera, ya sabes por dónde tienes que
           cruzar... <br /> Sí, por el paso de peatones.
           <p className="mt-2 font-bold text-rose-600">
@@ -99,7 +95,8 @@ function QuizGamePage3() {
           <div className="animate-zoom-trophy">
             <WinIcon
               sx={{
-                fontSize: 150,
+                fontSize: {xs:100,
+                md: 500},
                 color: "#ca8a04",
               }}
             />
@@ -107,16 +104,16 @@ function QuizGamePage3() {
           <div className="text-center font-bold text-black mb-6 ">
             <p className="text-5xl ">¡Felicidades!</p>
             <br />
-            <p className="text-3xl text-yellow-600">
-              Has superado la segunda misión.
+            <p className="text-xl md:text-3xl text-yellow-600">
+              Has conseguido superar la tercera misión.
             </p>
             <br />
-            <p className="text-xl text-yellow-900">
+            <p className="md:text-xl text-yellow-900">
               Has aprendido como han evolucionado las ciudades y como nos
               movemos en ellas.
             </p>
             <br />
-            <p className="text-xl text-yellow-900">
+            <p className="md:text-xl text-yellow-900">
               Ahora vemos mejor el problema de las emisiones y como nuestro
               sistema de transporte está cambiando.
             </p>

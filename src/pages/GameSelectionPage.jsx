@@ -6,6 +6,7 @@ import train from "../assets/images/train.png";
 import bike from "../assets/images/bike.png";
 import { ProgressContext } from "../contexts/ProgressStore";
 import { useContext, useEffect, useState } from "react";
+import LockIcon from "@mui/icons-material/Lock";
 
 function GameSelectionPage() {
   const { progress } = useContext(ProgressContext);
@@ -19,6 +20,7 @@ function GameSelectionPage() {
     } else if (progress === 2) {
       setlevel2(true);
     } else if (progress === 3) {
+      setlevel2(true);
       setlevel3(true);
     }
   }, [progress]);
@@ -38,8 +40,8 @@ function GameSelectionPage() {
         <span className="text-5xl w-1/12 m-2 font-extrabold text-cyan-600">
           1
         </span>
-        <div className="flex flex-col w-7/12 justify-evenly items-center mr-2">
-          <p className="text-xl md:text-2xl font-bold leading-6 ">
+        <div className="flex flex-col w-7/12 justify-evenly items-center m-2">
+          <p className="md:text-2xl font-bold leading-6 ">
             Cambio climático, calidad del aire y salud
           </p>
         </div>
@@ -52,57 +54,15 @@ function GameSelectionPage() {
       </NavLink>
       {level2 && (
         <NavLink
-          to="/ecogames/mision1"
-          className="flex justify-evenly items-center bg-white/80 text-center h-28 rounded-lg p-3 drop-shadow-lg animate-slide2"
-        >
-          <span className="text-5xl w-1/12 m-2 font-extrabold text-emerald-600">
-            2
-          </span>
-          <div className="flex flex-col w-7/12 justify-evenly items-center mr-2">
-            <p className="text-lg md:text-2xl font-bold leading-6 ">
-              Tipos de trasnporte y seguridad vial
-            </p>
-          </div>
-          <div className="w-4/12 flex flex-col items-center overflow-visible ">
-            <img src={train} alt="" className="w-full z-10 animate-wiki-r" />
-            <button className="bg-emerald-600 py-1 px-3 -mt-2 rounded text-white text-md md:text-xl font-medium">
-              Comenzar
-            </button>
-          </div>
-        </NavLink>
-      )}
-      {!level2 && (
-        <div className="flex justify-evenly items-center bg-white/80 text-center h-28 rounded-lg p-3 drop-shadow-lg animate-slide2">
-          <span className="text-5xl w-1/12 m-2 font-extrabold text-gray-400">
-            2
-          </span>
-          <div className="flex flex-col w-7/12 justify-evenly items-center mr-2">
-            <p className="text-lg md:text-2xl font-bold leading-6 text-gray-400 ">
-              Cambio climático, calidad del aire y salud
-            </p>
-          </div>
-          <div className="w-4/12 flex flex-col items-center overflow-visible ">
-            <img
-              src={train}
-              alt=""
-              className="w-full z-10 animate-wiki-r grayscale"
-            />
-            <button className="bg-gray-400 py-1 px-3 -mt-2 rounded text-gray-100 text-md md:text-xl font-medium">
-              Comenzar
-            </button>
-          </div>
-        </div>
-      )}
-      {level3 && (
-        <NavLink
-          to="/ecogames/quiz-1"
+          to="/ecogames/mision3"
           className="flex justify-evenly items-center bg-white/80 text-center h-28 rounded-lg p-3 drop-shadow-lg animate-slide-r-3"
         >
           <span className="text-5xl w-1/12 m-2 font-extrabold text-lime-600">
-            3
+            2
           </span>
-          <div className="flex flex-col w-7/12 justify-evenly items-center mr-2">
-            <p className="text-xl md:text-2xl font-bold leading-6 ">
+          <div className="flex flex-col w-7/12 justify-evenly items-center m-2">
+            <p className="text-sm md:text-xl font-bold ">
+              Movilidad sostenible: <br />
               ¿Qué puedes <br /> hacer tú?
             </p>
           </div>
@@ -118,13 +78,17 @@ function GameSelectionPage() {
           </div>
         </NavLink>
       )}
-      {!level3 && (
+      {!level2 && (
         <div className="flex justify-evenly items-center bg-white/80 text-center h-28 rounded-lg p-3 drop-shadow-lg animate-slide-r-3">
+          <div className="absolute animate-wiki">
+            <LockIcon sx={{ fontSize: { xs: 80, md: 200 }, color: "#4b5563" }} />
+          </div>
           <span className="text-5xl w-1/12 m-2 font-extrabold text-gray-400">
-            3
+            2
           </span>
-          <div className="flex flex-col w-7/12 justify-evenly items-center mr-2">
-            <p className="text-xl md:text-2xl font-bold leading-6 text-gray-400 ">
+          <div className="flex flex-col w-7/12 justify-evenly items-center m-2">
+            <p className="text-sm md:text-xl font-bold  text-gray-400 ">
+              Movilidad sostenible: <br />
               ¿Qué puedes <br /> hacer tú?
             </p>
           </div>
@@ -135,6 +99,52 @@ function GameSelectionPage() {
               className="h-24 z-10 animate-wiki relative -top-6 grayscale"
             />
             <button className="bg-gray-400 py-1 px-3 -mt-9 rounded text-gray-100 text-md md:text-xl font-medium">
+              Comenzar
+            </button>
+          </div>
+        </div>
+      )}
+      {level3 && (
+        <NavLink
+          to="/ecogames/mision1"
+          className="flex justify-evenly items-center bg-white/80 text-center h-28 rounded-lg p-3 drop-shadow-lg animate-slide2"
+        >
+          <span className="text-5xl w-1/12 m-2 font-extrabold text-emerald-600">
+            3
+          </span>
+          <div className="flex flex-col w-7/12 justify-evenly items-center m-2">
+            <p className="md:text-2xl font-bold">
+              Movilidad urbana y seguridad vial
+            </p>
+          </div>
+          <div className="w-4/12 flex flex-col items-center overflow-visible ">
+            <img src={train} alt="" className="w-full z-10 animate-wiki-r" />
+            <button className="bg-emerald-600 py-1 px-3 -mt-2 rounded text-white text-md md:text-xl font-medium">
+              Comenzar
+            </button>
+          </div>
+        </NavLink>
+      )}
+      {!level3 && (
+        <div className="flex justify-evenly items-center bg-white/80 text-center h-28 rounded-lg p-3 drop-shadow-lg animate-slide2">
+        <div className="absolute animate-wiki">
+            <LockIcon sx={{ fontSize: { xs: 80, md: 200 }, color: "#4b5563" }} />
+          </div>
+          <span className="text-5xl w-1/12 m-2 font-extrabold text-gray-400">
+            3
+          </span>
+          <div className="flex flex-col w-7/12 justify-evenly items-center m-2">
+            <p className="md:text-2xl font-bold text-gray-400 ">
+              Movilidad urbana y seguridad vial
+            </p>
+          </div>
+          <div className="w-4/12 flex flex-col items-center overflow-visible ">
+            <img
+              src={train}
+              alt=""
+              className="w-full z-10 animate-wiki-r grayscale"
+            />
+            <button className="bg-gray-400 py-1 px-3 -mt-2 rounded text-gray-100 text-md md:text-xl font-medium">
               Comenzar
             </button>
           </div>

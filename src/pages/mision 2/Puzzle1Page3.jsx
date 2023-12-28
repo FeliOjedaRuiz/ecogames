@@ -1,17 +1,17 @@
 import { useState } from "react";
-import Layout from "../components/layouts/Layout";
-import NavControls from "../components/layouts/NavControls";
-import WrongModal from "../components/modal/WrongModal";
-import CorrectModal from "../components/modal/CorrectModal";
+import Layout from "../../components/layouts/Layout";
+import NavControls from "../../components/layouts/NavControls";
+import WrongModal from "../../components/modal/WrongModal";
+import CorrectModal from "../../components/modal/CorrectModal";
 import { NavLink } from "react-router-dom";
 import CheckIcon from "@mui/icons-material/Check";
 import CloseIcon from "@mui/icons-material/Close";
 import EastIcon from "@mui/icons-material/East";
-import correct from "../assets/mp3/correct.mp3";
-import wrong from "../assets/mp3/error.mp3";
-import puzzleImage from "../assets/images/Puzzle-8.png";
+import correct from "../../assets/mp3/correct.mp3";
+import wrong from "../../assets/mp3/error.mp3";
+import puzzleImage from "../../assets/images/puzzle-3.png";
 
-function Puzzle1Page8() {
+function Puzzle1Page3() {
   const [wrongModalState, setWrongModalState] = useState(false);
   const [correctModalState, setCorrectModalState] = useState(false);
 
@@ -32,7 +32,7 @@ function Puzzle1Page8() {
     <Layout>
       <div className="bg-gradient-to-b from-white to-gray-200 w-screen relative animate-slide1 -left-10 px-6 py-3 drop-shadow-lg rounded-lg">
         <h2 className="text-teal-700 drop-shadow-lg ml-7 leading-5 text-3xl md:text-5xl font-extrabold">
-          QUIZ PUZLE - 08
+          QUIZ PUZLE - 03
         </h2>
       </div>
 
@@ -43,30 +43,29 @@ function Puzzle1Page8() {
           alt="Esquema de ciudad con movilidad sostenible"
         />
       </div>
-      <div className="bg-gradient-to-b from-white to-gray-200 w-full animate-slide1 p-2 drop-shadow-lg rounded-lg">
-        <p className="font-extrabold text-sm md:text-lg text-center text-rose-700 leading-4 md:leading-6">
-          En los pueblos, al ser más pequeños y tener una menor población hay
-          menos problemas de movilidad. O ¿crees que puede haber problemas
-          también?
-        </p>
-      </div>
-      <div
-        onClick={() => wrongClick()}
-        className="bg-gradient-to-b from-lime-500 to-lime-700  p-2 animate-slide4 rounded-lg shadow-lg font-bold text-white"
-      >
-        <p className="drop-shadow-md text-center text-xs leading-4 md:text-lg md:leading-6">
-          No hay problema al vivir menos gente en el pueblo por que la
-          contaminación desaparece.
+      <div className="bg-gradient-to-b from-white to-gray-200 w-full animate-slide1 p-1 md:p-4 drop-shadow-lg rounded-lg">
+        <p className="font-extrabold md:text-2xl text-center text-rose-700">
+          ¿Cuál definición de movilidad urbana sostenible te parece más
+          apropiada?
         </p>
       </div>
       <div
         onClick={() => correctClick()}
         className="bg-gradient-to-b from-yellow-400 to-yellow-700  p-2 animate-slide3 rounded-lg shadow-lg font-bold text-white"
       >
-        <p className="drop-shadow-md text-center text-xs leading-4 md:text-lg md:leading-6">
-          Es importante que haya transporte público para conectarnos con los
-          pueblos y ciudades de alrededor para reducir la movilidad en coche
-          particular.
+        <p className="drop-shadow-md text-center text-sm leading-4 md:text-lg">
+          Es la movilidad que reduce la congestión de las calles y carreteras al
+          mismo tiempo que se reduce el consumo de combustibles fósiles
+          contaminantes.
+        </p>
+      </div>
+      <div
+        onClick={() => wrongClick()}
+        className="bg-gradient-to-b from-lime-500 to-lime-700  p-2 animate-slide4 rounded-lg shadow-lg font-bold text-white"
+      >
+        <p className="drop-shadow-md text-center text-sm leading-4 md:text-lg">
+          Se trata de poder ir siempre de un sitio a otro rápido para contaminar
+          menos rato.
         </p>
       </div>
       
@@ -88,7 +87,6 @@ function Puzzle1Page8() {
             Volver a intentar
           </button>
         </WrongModal>
-        
         <CorrectModal
           correctModalState={correctModalState}
           setCorrectModalState={setCorrectModalState}
@@ -100,7 +98,7 @@ function Puzzle1Page8() {
             <p className="text-2xl">Enhorabuena, vas por buen camino...</p>
           </div>
 
-          <NavLink to="/ecogames/puzzle1-final">
+          <NavLink to="/ecogames/puzzle1-4">
             <button className="bg-emerald-600 text-white m-2 px-3 py-2 rounded justify-around font-medium text-lg ">
               <span className="mr-2">Siguente</span>
               <EastIcon sx={{ fontSize: 30 }} />
@@ -113,4 +111,4 @@ function Puzzle1Page8() {
   );
 }
 
-export default Puzzle1Page8;
+export default Puzzle1Page3;
