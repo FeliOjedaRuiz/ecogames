@@ -9,7 +9,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import EastIcon from "@mui/icons-material/East";
 import correct from "../../assets/mp3/correct.mp3";
 import wrong from "../../assets/mp3/error.mp3";
-import puzzleImage from "../../assets/images/puzzle-4.png";
+import puzzle1Image4 from "../../assets/images/puzzle-4.png";
 
 function Puzzle1Page4() {
   const [wrongModalState, setWrongModalState] = useState(false);
@@ -39,7 +39,7 @@ function Puzzle1Page4() {
       <div className="w-full justify-center flex animate-slide2">
         <img
           className="w-full shadow-lg"
-          src={puzzleImage}
+          src={puzzle1Image4}
           alt="Esquema de ciudad con movilidad sostenible"
         />
       </div>
