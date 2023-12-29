@@ -6,7 +6,7 @@ import FinalModal from "../../components/modal/FinalModal";
 import WinIcon from "@mui/icons-material/EmojiEvents";
 import final from "../../assets/mp3/final.mp3";
 import { ProgressContext } from "../../contexts/ProgressStore";
-import puzzleImage from "../../assets/images/puzzle-final.png";
+import puzzleImage from "../../assets/images/puzzle19.png";
 
 function Puzzle1FinalPage() {
   const [finalModalState, setFinalModalState] = useState(false);

@@ -9,7 +9,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import EastIcon from "@mui/icons-material/East";
 import correct from "../../assets/mp3/correct.mp3";
 import wrong from "../../assets/mp3/error.mp3";
-import puzzle1Image5 from "../../assets/images/puzzle-5.png";
+import puzzle1Image5 from "../../assets/images/puzzle15.png";
 
 function Puzzle1Page5() {
   const [wrongModalState, setWrongModalState] = useState(false);
